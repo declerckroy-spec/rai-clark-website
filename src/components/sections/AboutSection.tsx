@@ -1,0 +1,166 @@
+'use client';
+
+import { motion, useInView } from 'framer-motion';
+import { useRef } from 'react';
+import Image from 'next/image';
+
+export default function AboutSection() {
+  const ref = useRef(null);
+  const isInView = useInView(ref, { once: true, margin: '-100px' });
+
+  return (
+    <section
+      id="about"
+      ref={ref}
+      className="relative min-h-screen py-24 px-6 bg-gradient-to-b from-secondary-black to-primary-black overflow-hidden"
+    >
+      {/* Animated Background Pattern */}
+      <div className="absolute inset-0 opacity-5">
+        <svg className="w-full h-full" xmlns="http://www.w3.org/2000/svg">
+          <defs>
+            <pattern id="wavePattern" x="0" y="0" width="100" height="100" patternUnits="userSpaceOnUse">
+              <path
+                d="M0 50 Q 25 25, 50 50 T 100 50"
+                fill="none"
+                stroke="#0066FF"
+                strokeWidth="1"
+              />
+            </pattern>
+          </defs>
+          <rect width="100%" height="100%" fill="url(#wavePattern)" />
+        </svg>
+      </div>
+
+      <div className="container mx-auto max-w-7xl relative z-10">
+        {/* Section Title */}
+        <motion.div
+          initial={{ opacity: 0, y: 50 }}
+          animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 50 }}
+          transition={{ duration: 0.8 }}
+          className="mb-16"
+        >
+          <h2 className="font-display font-black text-5xl md:text-7xl lg:text-display uppercase tracking-tight mb-4">
+            <span className="neon-text-pink">MEER DAN</span>
+            <br />
+            <span className="text-white">ALLEEN BEATS</span>
+          </h2>
+          <div className="w-32 h-1 bg-gradient-to-r from-hot-pink to-magenta" />
+        </motion.div>
+
+        {/* Split Layout */}
+        <div className="grid md:grid-cols-2 gap-12 items-center">
+          {/* Left: Image */}
+          <motion.div
+            initial={{ opacity: 0, x: -100 }}
+            animate={isInView ? { opacity: 1, x: 0 } : { opacity: 0, x: -100 }}
+            transition={{ duration: 0.8, delay: 0.2 }}
+            className="relative group"
+            data-cursor="image"
+          >
+            <div className="relative aspect-[3/4] overflow-hidden rounded-2xl">
+              {/* Rai Clark Portrait */}
+              <Image
+                src="/images/rai-clark-portrait.jpg"
+                alt="Rai Clark - Music Producer & Composer"
+                fill
+                className="object-cover"
+                sizes="(max-width: 768px) 100vw, 50vw"
+                priority
+              />
+
+              {/* Duotone Overlay Effect on Hover */}
+              <div className="absolute inset-0 bg-gradient-to-br from-neon-cyan to-magenta mix-blend-color opacity-0 group-hover:opacity-70 smooth-transition" />
+
+              {/* Border Glow Effect */}
+              <div className="absolute inset-0 rounded-2xl border-2 border-transparent group-hover:border-neon-cyan group-hover:shadow-neon-cyan smooth-transition" />
+            </div>
+
+            {/* Animated Connecting Lines */}
+            <motion.div
+              initial={{ scaleX: 0 }}
+              animate={isInView ? { scaleX: 1 } : { scaleX: 0 }}
+              transition={{ duration: 1, delay: 0.6 }}
+              className="hidden md:block absolute -right-6 top-1/2 w-12 h-0.5 bg-gradient-to-r from-cyan-bright to-transparent origin-left"
+            />
+          </motion.div>
+
+          {/* Right: Bio Text */}
+          <motion.div
+            initial={{ opacity: 0, x: 100 }}
+            animate={isInView ? { opacity: 1, x: 0 } : { opacity: 0, x: 100 }}
+            transition={{ duration: 0.8, delay: 0.4 }}
+            className="space-y-6"
+          >
+            <p className="text-lg md:text-xl text-gray-300 leading-relaxed">
+              Rai Clark is niet zomaar een producer - hij is een{' '}
+              <span className="text-cyan-bright font-bold">sonic storyteller</span>. Met jarenlange
+              ervaring in het vak, transformeert Rai emoties in frequenties en momenten in
+              memorabele composities.
+            </p>
+
+            <p className="text-lg md:text-xl text-gray-300 leading-relaxed">
+              Of het nu gaat om een intieme bruiloft, een krachtige bedrijfspresentatie, of een
+              persoonlijk project dat tot leven moet komen - Rai creëert{' '}
+              <span className="text-hot-pink font-bold">soundscapes</span> die raken, blijven
+              hangen, en impact maken.
+            </p>
+
+            <p className="text-lg md:text-xl text-gray-300 leading-relaxed">
+              Zijn signature? Een perfect gebalanceerde mix van{' '}
+              <span className="text-vivid-yellow font-bold">elektronica</span>,{' '}
+              <span className="text-arcade-green font-bold">organische instrumenten</span>, en
+              onverwachte elementen die jouw project van standaard naar spectacular tillen.
+            </p>
+
+            {/* Stats/Highlights */}
+            <div className="grid grid-cols-3 gap-6 pt-8 border-t border-gray-700">
+              <motion.div
+                initial={{ opacity: 0, y: 20 }}
+                animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 20 }}
+                transition={{ duration: 0.6, delay: 0.8 }}
+                className="text-center"
+              >
+                <div className="font-display text-4xl font-bold text-electric-blue mb-2">10+</div>
+                <div className="font-mono text-xs text-gray-400 uppercase">Jaar Ervaring</div>
+              </motion.div>
+
+              <motion.div
+                initial={{ opacity: 0, y: 20 }}
+                animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 20 }}
+                transition={{ duration: 0.6, delay: 0.9 }}
+                className="text-center"
+              >
+                <div className="font-display text-4xl font-bold text-hot-pink mb-2">100+</div>
+                <div className="font-mono text-xs text-gray-400 uppercase">Projecten</div>
+              </motion.div>
+
+              <motion.div
+                initial={{ opacity: 0, y: 20 }}
+                animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 20 }}
+                transition={{ duration: 0.6, delay: 1 }}
+                className="text-center"
+              >
+                <div className="font-display text-4xl font-bold text-vivid-yellow mb-2">∞</div>
+                <div className="font-mono text-xs text-gray-400 uppercase">Creativiteit</div>
+              </motion.div>
+            </div>
+
+            {/* CTA */}
+            <motion.div
+              initial={{ opacity: 0 }}
+              animate={isInView ? { opacity: 1 } : { opacity: 0 }}
+              transition={{ duration: 0.6, delay: 1.2 }}
+              className="pt-6"
+            >
+              <a href="#contact">
+                <button className="magnetic-button group relative px-8 py-4 border-2 border-cyan-bright text-cyan-bright font-bold uppercase tracking-wider rounded-lg overflow-hidden smooth-transition hover:bg-cyan-bright hover:text-black">
+                  <span className="relative z-10">Laten We Praten</span>
+                </button>
+              </a>
+            </motion.div>
+          </motion.div>
+        </div>
+      </div>
+    </section>
+  );
+}
