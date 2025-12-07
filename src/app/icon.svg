@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+  <!-- Background -->
+  <rect width="100" height="100" fill="#0A0A0A" rx="15"/>
+
+  <!-- Music note icon -->
+  <g fill="#0066FF">
+    <!-- Note stem -->
+    <rect x="62" y="20" width="6" height="45" rx="3"/>
+
+    <!-- First note head -->
+    <ellipse cx="58" cy="70" rx="10" ry="8" transform="rotate(-20 58 70)"/>
+
+    <!-- Second note head -->
+    <ellipse cx="42" cy="78" rx="10" ry="8" transform="rotate(-20 42 78)"/>
+
+    <!-- Connecting beam -->
+    <path d="M 40 73 L 62 60 L 62 65 L 40 78 Z"/>
+  </g>
+</svg>
