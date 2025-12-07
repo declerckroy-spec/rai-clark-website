@@ -5,7 +5,6 @@ import ServicesSection from '@/components/sections/ServicesSection';
 import PortfolioSection from '@/components/sections/PortfolioSection';
 import SpecialMomentsSection from '@/components/sections/SpecialMomentsSection';
 import ProcessSection from '@/components/sections/ProcessSection';
-import TestimonialsSection from '@/components/sections/TestimonialsSection';
 import ContactSection from '@/components/sections/ContactSection';
 import Footer from '@/components/sections/Footer';
 import SpotifyFloatingButton from '@/components/SpotifyFloatingButton';
@@ -25,7 +24,6 @@ export default function Home() {
         <PortfolioSection />
         <SpecialMomentsSection />
         <ProcessSection />
-        <TestimonialsSection />
         <ContactSection />
         <Footer />
       </main>

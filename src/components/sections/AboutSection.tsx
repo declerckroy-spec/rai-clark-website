@@ -92,58 +92,20 @@ export default function AboutSection() {
             className="space-y-6"
           >
             <p className="text-lg md:text-xl text-gray-300 leading-relaxed">
-              Rai Clark is niet zomaar een producer - hij is een{' '}
-              <span className="text-cyan-bright font-bold">sonic storyteller</span>. Met jarenlange
-              ervaring in het vak, transformeert Rai emoties in frequenties en momenten in
-              memorabele composities.
+              Ik ben Rai Clark. Overdag schrijf ik teksten voor bedrijven, 's avonds maak ik muziek. Veel muziek.
             </p>
 
             <p className="text-lg md:text-xl text-gray-300 leading-relaxed">
-              Of het nu gaat om een intieme bruiloft, een krachtige bedrijfspresentatie, of een
-              persoonlijk project dat tot leven moet komen - Rai creëert{' '}
-              <span className="text-hot-pink font-bold">soundscapes</span> die raken, blijven
-              hangen, en impact maken.
+              Wat begon als hobby is uitgegroeid tot een obsessie. Ik release albums, experimentele tracks, gekke nummers die nergens op slaan: en ja, ook persoonlijke liedjes in opdracht. Met AI-tools maak ik muziek die klinkt alsof je je favoriete band opeens een nummer over jouw oma heeft geschreven.
             </p>
 
             <p className="text-lg md:text-xl text-gray-300 leading-relaxed">
-              Zijn signature? Een perfect gebalanceerde mix van{' '}
-              <span className="text-vivid-yellow font-bold">elektronica</span>,{' '}
-              <span className="text-arcade-green font-bold">organische instrumenten</span>, en
-              onverwachte elementen die jouw project van standaard naar spectacular tillen.
+              Het mooie is: het kan echt alles zijn. Van uptempo feestnummer tot emotioneel akoestisch verhaal. Van absurd kinderliedje tot experimentele noise. Soms maak ik het voor mezelf, soms voor jou, maar altijd met dezelfde energie.
             </p>
 
-            {/* Stats/Highlights */}
-            <div className="grid grid-cols-3 gap-6 pt-8 border-t border-gray-700">
-              <motion.div
-                initial={{ opacity: 0, y: 20 }}
-                animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 20 }}
-                transition={{ duration: 0.6, delay: 0.8 }}
-                className="text-center"
-              >
-                <div className="font-display text-4xl font-bold text-electric-blue mb-2">10+</div>
-                <div className="font-mono text-xs text-gray-400 uppercase">Jaar Ervaring</div>
-              </motion.div>
-
-              <motion.div
-                initial={{ opacity: 0, y: 20 }}
-                animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 20 }}
-                transition={{ duration: 0.6, delay: 0.9 }}
-                className="text-center"
-              >
-                <div className="font-display text-4xl font-bold text-hot-pink mb-2">100+</div>
-                <div className="font-mono text-xs text-gray-400 uppercase">Projecten</div>
-              </motion.div>
-
-              <motion.div
-                initial={{ opacity: 0, y: 20 }}
-                animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 20 }}
-                transition={{ duration: 0.6, delay: 1 }}
-                className="text-center"
-              >
-                <div className="font-display text-4xl font-bold text-vivid-yellow mb-2">∞</div>
-                <div className="font-mono text-xs text-gray-400 uppercase">Creativiteit</div>
-              </motion.div>
-            </div>
+            <p className="text-lg md:text-xl text-gray-300 leading-relaxed">
+              En ja, ik gebruik AI voor de productie. Geen live band, geen studio van 500 euro per uur, maar wel muziek waar mensen blij van worden. Check Het Beestenbal als je me niet gelooft. Mijn oma is mijn grootste fan, dat zegt genoeg.
+            </p>
 
             {/* CTA */}
             <motion.div

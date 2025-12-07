@@ -131,7 +131,7 @@ export default function SpecialMomentsSection() {
       emoji: '💒',
       title: 'BRUILOFTEN',
       description:
-        'Van ceremonie tot first dance - jouw soundtrack naar forever. Ik creëer custom composities die jouw liefdesverhaal vertellen.',
+        'Jullie dag, jullie liedje. Van ceremonie tot first dance. Muziek die jullie verhaal vertelt en waar je je leven lang naar terugluistert.',
       color: '#FF0066',
     },
     {
@@ -139,7 +139,7 @@ export default function SpecialMomentsSection() {
       emoji: '🎉',
       title: 'JUBILEA',
       description:
-        '25, 50, 75 jaar? Vier het met een compositie die de tijd eert. Muziek die generaties verbindt en herinneringen tot leven brengt.',
+        '25 jaar getrouwd? 50 jaar in dienst? Vier het met een song die de jaren eert en de toekomst viert.',
       color: '#FFD700',
     },
     {
@@ -147,7 +147,7 @@ export default function SpecialMomentsSection() {
       emoji: '🕊️',
       title: 'HERDENKINGEN',
       description:
-        'Emotionele muziek die troost en herinnert met waardigheid. Een laatste ode die respect brengt aan dierbare herinneringen.',
+        'Een muzikaal eerbetoon aan iemand die er niet meer is. Met respect, liefde en de herinnering levend houden.',
       color: '#00FFFF',
     },
     {
@@ -155,15 +155,15 @@ export default function SpecialMomentsSection() {
       emoji: '🎂',
       title: 'VERJAARDAGEN',
       description:
-        'Make it extra special met een custom birthday anthem. Van sweet sixteen tot gouden jubileum - jouw feest, jouw sound.',
+        'Van 18 tot 80. Een verjaardagsliedje dat niet kinderachtig is maar wel blijft plakken. Het cadeau waar niemand op rekent.',
       color: '#00FF87',
     },
     {
       icon: <Briefcase className="w-16 h-16" />,
       emoji: '🏢',
-      title: 'CORPORATE EVENTS',
+      title: 'BEDRIJVEN',
       description:
-        'Bedrijfsidentiteit vertaald naar een signature sound. Van product launches tot team events - muziek die converteert.',
+        'Podcast intro, product launch muziek, bedrijfssong. Audio die je merk definieert en blijft hangen bij je doelgroep.',
       color: '#0066FF',
     },
     {
@@ -171,7 +171,7 @@ export default function SpecialMomentsSection() {
       emoji: '🎬',
       title: 'CONTENT CREATORS',
       description:
-        'Podcasts, video\'s, streams - sound die je merk definieert. Professionele productie die je content naar het next level tilt.',
+        'YouTube, TikTok, podcasts. Unieke muziek die je content onderscheidt van de rest en copyright-vrij is.',
       color: '#8B00FF',
     },
   ];
@@ -218,7 +218,7 @@ export default function SpecialMomentsSection() {
             className="w-32 h-1 bg-gradient-to-r from-hot-pink via-vivid-yellow to-cyan-bright mx-auto mb-6"
           />
           <p className="text-xl text-gray-400 max-w-3xl mx-auto">
-            Muziek maakt momenten onvergetelijk. Ik componeer voor:
+            Ik maak muziek voor alle belangrijke momenten
           </p>
         </motion.div>
 
@@ -268,11 +268,11 @@ export default function SpecialMomentsSection() {
           className="text-center mt-16"
         >
           <p className="font-mono text-cyan-bright mb-6 uppercase tracking-wider">
-            Jouw moment verdient unieke muziek
+            Voor welk moment wil jij een liedje?
           </p>
           <a href="#contact">
             <button className="magnetic-button px-10 py-5 bg-gradient-to-r from-vivid-yellow to-sunset-orange text-black font-bold text-lg uppercase tracking-wider rounded-lg smooth-transition hover:shadow-lg hover:shadow-vivid-yellow/50">
-              Laten We Iets Creëren
+              Neem Contact Op
             </button>
           </a>
         </motion.div>

@@ -1,22 +1,13 @@
 'use client';
 
 import { motion, useInView } from 'framer-motion';
-import { useRef, useState } from 'react';
+import { useRef } from 'react';
 import { Play, ExternalLink } from 'lucide-react';
 import Image from 'next/image';
 
 export default function PortfolioSection() {
   const ref = useRef(null);
   const isInView = useInView(ref, { once: true, margin: '-100px' });
-  const [activeGenre, setActiveGenre] = useState('all');
-
-  const genres = [
-    { id: 'all', label: 'ALL', color: '#FFFFFF' },
-    { id: 'electronic', label: 'ELECTRONIC', color: '#0066FF' },
-    { id: 'cinematic', label: 'CINEMATIC', color: '#FF0066' },
-    { id: 'ambient', label: 'AMBIENT', color: '#00FFFF' },
-    { id: 'experimental', label: 'EXPERIMENTAL', color: '#FFD700' },
-  ];
 
   return (
     <section
@@ -72,54 +63,10 @@ export default function PortfolioSection() {
             className="w-32 h-1 bg-gradient-to-r from-hot-pink to-magenta mx-auto"
           />
           <p className="mt-6 text-xl text-gray-400 max-w-2xl mx-auto">
-            Recent werk & collaborations - luister en ervaar het verschil
+            Van absurde kinderliedjes tot experimentele bangers. Dit is waar ik mezelf uitleef en mezelf verras. Alles gemaakt met AI, creativiteit en soms te veel koffie. Wil je een opdracht? Scroll door. Wil je gewoon luisteren? Hit play.
           </p>
         </motion.div>
 
-        {/* Genre Filter */}
-        <motion.div
-          initial={{ opacity: 0, y: 30 }}
-          animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 30 }}
-          transition={{ duration: 0.8, delay: 0.4 }}
-          className="flex flex-wrap justify-center gap-4 mb-16"
-        >
-          {genres.map((genre, index) => (
-            <motion.button
-              key={genre.id}
-              initial={{ opacity: 0, scale: 0 }}
-              animate={isInView ? { opacity: 1, scale: 1 } : { opacity: 0, scale: 0 }}
-              transition={{ duration: 0.4, delay: 0.5 + index * 0.1 }}
-              onClick={() => setActiveGenre(genre.id)}
-              className={`
-                px-6 py-3 font-mono text-sm uppercase tracking-wider rounded-full
-                border-2 smooth-transition
-                ${
-                  activeGenre === genre.id
-                    ? 'bg-opacity-100 text-black'
-                    : 'bg-transparent text-white hover:text-black'
-                }
-              `}
-              style={{
-                borderColor: genre.color,
-                backgroundColor: activeGenre === genre.id ? genre.color : 'transparent',
-              }}
-              onMouseEnter={(e) => {
-                if (activeGenre !== genre.id) {
-                  e.currentTarget.style.backgroundColor = genre.color;
-                  e.currentTarget.style.color = '#000000';
-                }
-              }}
-              onMouseLeave={(e) => {
-                if (activeGenre !== genre.id) {
-                  e.currentTarget.style.backgroundColor = 'transparent';
-                  e.currentTarget.style.color = '#FFFFFF';
-                }
-              }}
-            >
-              {genre.label}
-            </motion.button>
-          ))}
-        </motion.div>
 
         {/* Spotify Embed - Hero Feature */}
         <motion.div
@@ -236,45 +183,37 @@ export default function PortfolioSection() {
                 </span>
               </div>
               <h3 className="font-display font-bold text-xl uppercase mb-2">HET BEESTENBAL</h3>
-              <p className="text-sm text-gray-400">Originele Compositie</p>
+              <p className="text-sm text-gray-400">Een compleet album vol vrolijke dierenliedjes. Denk Hamstercontrole, Flamingo Rosa en Truus gaat los.</p>
             </div>
           </motion.div>
 
-          {/* Sample Project Cards */}
-          {[
-            { title: 'WEDDING SCORE', genre: 'Cinematic', color: '#FF0066' },
-            { title: 'PODCAST INTRO', genre: 'Electronic', color: '#0066FF' },
-          ].map((project, index) => (
-            <motion.div
-              key={project.title}
-              initial={{ opacity: 0, y: 30 }}
-              animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 30 }}
-              transition={{ duration: 0.6, delay: 1.15 + index * 0.15 }}
-              className="group relative p-6 bg-secondary-black rounded-xl border-2 border-gray-800 hover:border-gray-600 smooth-transition overflow-hidden"
-            >
-              {/* Hover Gradient */}
-              <div
-                className="absolute inset-0 opacity-0 group-hover:opacity-10 smooth-transition"
-                style={{
-                  background: `linear-gradient(135deg, transparent, ${project.color})`,
-                }}
-              />
+          {/* Coming Soon Card */}
+          <motion.div
+            initial={{ opacity: 0, y: 30 }}
+            animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 30 }}
+            transition={{ duration: 0.6, delay: 1.15 }}
+            className="group relative p-6 bg-secondary-black rounded-xl border-2 border-gray-800 hover:border-electric-blue smooth-transition overflow-hidden md:col-span-2"
+          >
+            {/* Hover Gradient */}
+            <div
+              className="absolute inset-0 opacity-0 group-hover:opacity-10 smooth-transition"
+              style={{
+                background: 'linear-gradient(135deg, transparent, #0066FF)',
+              }}
+            />
 
-              <div className="relative">
-                <div className="flex items-center justify-between mb-4">
-                  <span
-                    className="px-3 py-1 text-xs font-mono uppercase tracking-wider rounded-full border"
-                    style={{ borderColor: project.color, color: project.color }}
-                  >
-                    {project.genre}
-                  </span>
-                  <Play className="w-6 h-6 text-gray-400 group-hover:text-white smooth-transition" />
-                </div>
-                <h3 className="font-display font-bold text-xl uppercase">{project.title}</h3>
-                <p className="text-sm text-gray-400 mt-2">Beluister op Spotify</p>
+            <div className="relative">
+              <div className="flex items-center justify-between mb-4">
+                <span
+                  className="px-3 py-1 text-xs font-mono uppercase tracking-wider rounded-full border border-electric-blue text-electric-blue"
+                >
+                  Binnenkort
+                </span>
               </div>
-            </motion.div>
-          ))}
+              <h3 className="font-display font-bold text-2xl uppercase mb-2">RADIO CLARK</h3>
+              <p className="text-base text-gray-400">Een nieuwe album waar ik nu aan werk. Stay tuned!</p>
+            </div>
+          </motion.div>
         </motion.div>
 
         {/* Bottom CTA */}
@@ -290,7 +229,7 @@ export default function PortfolioSection() {
             rel="noopener noreferrer"
           >
             <button className="magnetic-button group px-10 py-5 bg-gradient-to-r from-spotify-green to-arcade-green text-black font-bold text-lg uppercase tracking-wider rounded-lg smooth-transition hover:shadow-lg hover:shadow-spotify-green/50 flex items-center gap-3 mx-auto">
-              <span>Beluister Meer Op Spotify</span>
+              <span>Beluister Alles Op Spotify</span>
               <ExternalLink className="w-5 h-5 group-hover:translate-x-1 smooth-transition" />
             </button>
           </a>

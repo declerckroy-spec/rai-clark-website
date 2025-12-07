@@ -109,7 +109,7 @@ function ServiceCard({ icon, title, description, color, delay }: ServiceCardProp
                 e.currentTarget.style.color = color;
               }}
             >
-              Meer Info
+              Neem Contact Op
             </button>
           </a>
         </motion.div>
@@ -129,23 +129,23 @@ export default function ServicesSection() {
   const services = [
     {
       icon: <Music2 className="w-8 h-8" />,
-      title: 'CUSTOM COMPOSITIES',
+      title: 'PERSOONLIJKE LIEDJES',
       description:
-        'Unieke muziek voor jouw unieke moment. Van sprookjesachtige bruiloften tot emotionele herdenkingen - elke compositie wordt op maat gemaakt en vertelt precies jouw verhaal.',
+        'Een liedje over jouw vader, jouw vriendin, jouw hond. Voor een verjaardag, jubileum, afscheid of gewoon omdat het kan. Dit is wat ik het liefste doe en waar mensen het meest blij van worden.',
       color: '#0066FF',
     },
     {
       icon: <Radio className="w-8 h-8" />,
-      title: 'SOUND DESIGN & PRODUCTIE',
+      title: 'BRUILOFTSMUZIEK',
       description:
-        'Professionele producties voor bedrijven, podcasts, video\'s en meer. Ik til je content naar een hoger niveau met sound design dat je doelgroep raakt en converteert.',
+        'Van introsong voor jullie binnenkomst tot een eigen versie van jullie favoriete nummer. Muziek die jullie dag nog specialer maakt en waar gasten over napraten.',
       color: '#FF0066',
     },
     {
       icon: <Sliders className="w-8 h-8" />,
-      title: 'MUZIKALE ARRANGEMENTEN',
+      title: 'BEDRIJFSMUZIEK',
       description:
-        'Heb je al muziek maar wil je het naar het next level brengen? Ik transform bestaande tracks met fresh arrangementen, mixing en mastering die klinken als een miljoen dollar.',
+        'Podcasts, video\'s, presentaties. Voor content die een signature sound nodig heeft. Muziek die past bij je merk en blijft hangen bij je publiek.',
       color: '#FFD700',
     },
   ];
@@ -197,9 +197,9 @@ export default function ServicesSection() {
           className="text-center mb-20"
         >
           <h2 className="font-display font-black text-5xl md:text-7xl lg:text-display uppercase tracking-tight mb-4">
-            <span className="text-white">WAT IK</span>
+            <span className="text-white">WAT IK VOOR</span>
             <br />
-            <span className="neon-text">DOE</span>
+            <span className="neon-text">JE KAN MAKEN</span>
           </h2>
           <motion.div
             initial={{ scaleX: 0 }}
@@ -208,7 +208,7 @@ export default function ServicesSection() {
             className="w-32 h-1 bg-gradient-to-r from-electric-blue to-cyan-bright mx-auto"
           />
           <p className="mt-6 text-xl text-gray-400 max-w-2xl mx-auto">
-            Van concept tot creatie - professionele muziekproductie die impact maakt
+            Naast mijn eigen releases maak ik ook muziek in opdracht. Van persoonlijke liedjes tot professionele producties.
           </p>
         </motion.div>
 
@@ -234,11 +234,11 @@ export default function ServicesSection() {
           className="text-center mt-16"
         >
           <p className="font-mono text-cyan-bright mb-6 uppercase tracking-wider">
-            Klaar om jouw project naar het next level te tillen?
+            Klaar om iets moois te maken?
           </p>
           <a href="#contact">
             <button className="magnetic-button px-10 py-5 bg-gradient-to-r from-hot-pink to-magenta text-white font-bold text-lg uppercase tracking-wider rounded-lg smooth-transition hover:shadow-neon-pink">
-              Start Je Project
+              Neem Contact Op
             </button>
           </a>
         </motion.div>

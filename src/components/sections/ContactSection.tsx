@@ -9,7 +9,6 @@ interface FormData {
   name: string;
   email: string;
   projectType: string;
-  budget: string;
   message: string;
 }
 
@@ -29,16 +28,30 @@ export default function ContactSection() {
   const onSubmit = async (data: FormData) => {
     setIsSubmitting(true);
 
-    // Simulate API call - Replace with actual form submission
-    await new Promise((resolve) => setTimeout(resolve, 1500));
+    try {
+      const response = await fetch('/api/contact', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify(data),
+      });
 
-    console.log('Form submitted:', data);
-    setIsSubmitted(true);
-    setIsSubmitting(false);
-    reset();
+      const result = await response.json();
 
-    // Reset success message after 5 seconds
-    setTimeout(() => setIsSubmitted(false), 5000);
+      if (response.ok) {
+        setIsSubmitted(true);
+        reset();
+        setTimeout(() => setIsSubmitted(false), 5000);
+      } else {
+        alert(result.error || 'Er ging iets mis. Probeer het opnieuw of mail direct naar rai@raiclark.nl');
+      }
+    } catch (error) {
+      console.error('Error submitting form:', error);
+      alert('Er ging iets mis. Probeer het opnieuw of mail direct naar rai@raiclark.nl');
+    } finally {
+      setIsSubmitting(false);
+    }
   };
 
   return (
@@ -98,9 +111,7 @@ export default function ContactSection() {
             className="w-32 h-1 bg-gradient-to-r from-hot-pink to-magenta mx-auto mb-6"
           />
           <p className="text-xl text-gray-400 max-w-3xl mx-auto leading-relaxed">
-            Vertel me over je project. Geen idee is te groot, te klein, of te gek.
-            <br />
-            <span className="text-cyan-bright">Let's make something unforgettable.</span>
+            Vertel me je idee. Geen idee is te gek, te klein of te vaag. En maak je geen zorgen over het budget, we stemmen de prijs samen af op basis van wat je wilt.
           </p>
         </motion.div>
 
@@ -163,34 +174,17 @@ export default function ContactSection() {
                   className="w-full px-6 py-4 bg-secondary-black border-2 border-gray-800 rounded-lg text-white focus:border-cyan-bright focus:outline-none smooth-transition cursor-pointer"
                 >
                   <option value="">Selecteer...</option>
+                  <option value="persoonlijk">Persoonlijk liedje</option>
                   <option value="bruiloft">Bruiloft</option>
                   <option value="jubileum">Jubileum</option>
-                  <option value="herdenking">Herdenking</option>
-                  <option value="corporate">Corporate / Bedrijf</option>
-                  <option value="content">Content (Podcast/Video)</option>
+                  <option value="verjaardag">Verjaardag</option>
+                  <option value="bedrijf">Bedrijf</option>
+                  <option value="content">Content</option>
                   <option value="anders">Anders</option>
                 </select>
                 {errors.projectType && (
                   <p className="mt-2 text-sm text-hot-pink">{errors.projectType.message}</p>
                 )}
-              </div>
-
-              {/* Budget Range */}
-              <div>
-                <label htmlFor="budget" className="block text-sm font-mono uppercase tracking-wider text-gray-400 mb-2">
-                  Budget Range
-                </label>
-                <select
-                  id="budget"
-                  {...register('budget')}
-                  className="w-full px-6 py-4 bg-secondary-black border-2 border-gray-800 rounded-lg text-white focus:border-cyan-bright focus:outline-none smooth-transition cursor-pointer"
-                >
-                  <option value="">Selecteer...</option>
-                  <option value="<500">{"< €500"}</option>
-                  <option value="500-1500">€500 - €1500</option>
-                  <option value="1500-3000">€1500 - €3000</option>
-                  <option value="3000+">€3000+</option>
-                </select>
               </div>
 
               {/* Message */}
@@ -281,7 +275,7 @@ export default function ContactSection() {
 
                 {/* Instagram */}
                 <a
-                  href="https://instagram.com/raiclarkmusic"
+                  href="https://www.instagram.com/rai.clark/"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="flex items-center gap-4 p-4 rounded-lg bg-secondary-black border-2 border-gray-800 hover:border-hot-pink smooth-transition group"
@@ -291,13 +285,13 @@ export default function ContactSection() {
                   </div>
                   <div>
                     <p className="font-mono text-xs uppercase text-gray-400">Instagram</p>
-                    <p className="text-white font-medium">@raiclarkmusic</p>
+                    <p className="text-white font-medium">@rai.clark</p>
                   </div>
                 </a>
 
                 {/* WhatsApp */}
                 <a
-                  href="https://wa.me/31612345678"
+                  href="https://wa.me/31628206410"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="flex items-center gap-4 p-4 rounded-lg bg-secondary-black border-2 border-gray-800 hover:border-arcade-green smooth-transition group"
@@ -307,7 +301,7 @@ export default function ContactSection() {
                   </div>
                   <div>
                     <p className="font-mono text-xs uppercase text-gray-400">WhatsApp</p>
-                    <p className="text-white font-medium">+31 6 1234 5678</p>
+                    <p className="text-white font-medium">+31 6 28 20 64 10</p>
                   </div>
                 </a>
 
@@ -343,15 +337,15 @@ export default function ContactSection() {
                 </li>
                 <li className="flex items-start gap-3">
                   <span className="text-cyan-bright text-xl">→</span>
-                  <span>Vrijblijvend kennismakingsgesprek</span>
+                  <span>Vrijblijvend gesprek over je idee</span>
                 </li>
                 <li className="flex items-start gap-3">
                   <span className="text-cyan-bright text-xl">→</span>
-                  <span>Op maat gemaakte offerte</span>
+                  <span>Eerlijke prijs die past bij je wensen</span>
                 </li>
                 <li className="flex items-start gap-3">
                   <span className="text-cyan-bright text-xl">→</span>
-                  <span>Geen verplichtingen, pure transparantie</span>
+                  <span>Geen gedoe, gewoon goeie muziek</span>
                 </li>
               </ul>
             </div>

@@ -153,33 +153,33 @@ export default function ProcessSection() {
   const steps = [
     {
       number: '01',
-      title: 'INTAKE & INSPIRATIE',
+      title: 'VERTEL ME JE VERHAAL',
       description:
-        'We starten met een gesprek. Wat is jouw verhaal? Wat moet de muziek overbrengen? Welke referenties resoneren met je? Dit is de basis van alles.',
+        'Stuur me een bericht met je idee. Voor wie is het? Wat is de gelegenheid? Welke muziek vinden ze leuk? Hoe moet het klinken? Alle info helpt, maar het hoeft niet perfect te zijn.',
       icon: <MessageSquare className="w-6 h-6" />,
       color: '#0066FF',
     },
     {
       number: '02',
-      title: 'CONCEPT & CREATIE',
+      title: 'IK MAAK EEN EERSTE VERSIE',
       description:
-        'Op basis van onze intake creëer ik een concept en eerste demo. Je hoort waar de richting naartoe gaat en we fine-tunen samen tot het perfect is.',
+        'Op basis van jouw input maak ik een demo. Je hoort de richting, de melodie, de tekst. Meestal zit het in één keer goed, maar we kunnen altijd aanpassingen doen.',
       icon: <Lightbulb className="w-6 h-6" />,
       color: '#FF0066',
     },
     {
       number: '03',
-      title: 'PRODUCTIE & POLISH',
+      title: 'FINE-TUNING',
       description:
-        'De magie gebeurt. Ik produceer de volledige track met aandacht voor elk detail - van de eerste noot tot de laatste frequency. Professional grade, always.',
+        'Wil je iets anders in de tekst? Andere sfeer? We schaven samen tot het perfect is. Ik blijf net zo lang doorwerken tot jij blij bent.',
       icon: <Cog className="w-6 h-6" />,
       color: '#FFD700',
     },
     {
       number: '04',
-      title: 'DELIVERY & DELIGHT',
+      title: 'HET IS VAN JOU',
       description:
-        'Je ontvangt je compositie in alle formaten die je nodig hebt. Plus: volledige rechten en ownership. Het is van jou, voor altijd.',
+        'Je kan het nummer in alle formaten krijgen die je nodig hebt. MP3, WAV, noem het maar op. En het allerbelangrijkste: het is van jou. Voor altijd.',
       icon: <Download className="w-6 h-6" />,
       color: '#00FFFF',
     },
@@ -243,7 +243,7 @@ export default function ProcessSection() {
             className="w-32 h-1 bg-gradient-to-r from-electric-blue via-hot-pink to-vivid-yellow mx-auto mb-6"
           />
           <p className="text-xl text-gray-400 max-w-2xl mx-auto">
-            Een bewezen proces dat jouw visie transformeert naar meesterwerk
+            Zo werkt het van begin tot eind
           </p>
         </motion.div>
 
@@ -267,11 +267,11 @@ export default function ProcessSection() {
           className="text-center mt-16"
         >
           <p className="font-mono text-cyan-bright mb-6 uppercase tracking-wider text-lg">
-            Ready om dit proces te starten?
+            Zullen we beginnen?
           </p>
           <a href="#contact">
             <button className="magnetic-button px-10 py-5 bg-gradient-to-r from-electric-blue via-vhs-purple to-hot-pink text-white font-bold text-lg uppercase tracking-wider rounded-lg smooth-transition hover:shadow-lg hover:scale-105">
-              Laten We Beginnen
+              Neem Contact Op
             </button>
           </a>
         </motion.div>
