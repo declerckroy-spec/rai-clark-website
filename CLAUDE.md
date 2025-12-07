@@ -4,7 +4,14 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 ## Project Overview
 
-This is a Next.js-based one-page portfolio website for Rai Clark, a Dutch music producer and composer. The site features heavy visual effects including 3D animations (Three.js), custom cursor interactions, parallax scrolling, and retro 80s/90s VHS-glitch aesthetics with neon accent colors.
+This is a Next.js-based one-page portfolio website for Rai Clark, a Dutch music producer, composer and songwriter. The site serves both as a **fansite** (showcasing artistic releases) and **order platform** (custom songs on commission). It features heavy visual effects including 3D animations (Three.js), custom cursor interactions, parallax scrolling, and retro 80s/90s VHS-glitch aesthetics with neon accent colors.
+
+### Tone of Voice
+- **Nuchter, eerlijk, direct Nederlands** (like roydeclerck.nl)
+- NO AI-clichés (em-dashes, excessive bolding, typical AI phrasing)
+- NO corporate buzzwords or marketing jargon
+- Creative and quirky headlines are OK, but body copy stays grounded
+- Focus: artistic releases AND commissioned work (both equally important)
 
 ## Development Commands
 
@@ -31,6 +38,7 @@ npm run lint
 - **Animations**: Framer Motion + GSAP
 - **3D Graphics**: Three.js via @react-three/fiber and @react-three/drei
 - **Forms**: react-hook-form
+- **Email**: Resend (for contact form submissions)
 
 ### Project Structure
 
@@ -39,14 +47,17 @@ The site is a single-page application composed of modular sections:
 ```
 src/
 ├── app/
-│   ├── page.tsx          # Main page - imports all sections sequentially
-│   ├── layout.tsx        # Root layout with SEO metadata & JSON-LD structured data
-│   └── globals.css       # Global styles, Tailwind imports, custom animations
+│   ├── page.tsx                    # Main page - imports all sections sequentially
+│   ├── layout.tsx                  # Root layout with SEO metadata & JSON-LD structured data
+│   ├── globals.css                 # Global styles, Tailwind imports, custom animations
+│   └── api/
+│       └── contact/
+│           └── route.ts            # API route for contact form (Resend integration)
 └── components/
-    ├── CustomCursor.tsx           # Custom cursor with states (default/link/button/image)
-    ├── Hero3D.tsx                 # Three.js 3D animated shape for hero section
-    ├── SpotifyFloatingButton.tsx  # Sticky Spotify button (bottom-right)
-    ├── EasterEggs.tsx             # Konami code handler (↑↑↓↓←→←→BA activates "RAVE MODE")
+    ├── CustomCursor.tsx            # Custom cursor with states (default/link/button/image)
+    ├── Hero3D.tsx                  # Three.js 3D animated shape for hero section
+    ├── SpotifyFloatingButton.tsx   # Sticky Spotify button (bottom-right)
+    ├── EasterEggs.tsx              # Konami code handler (↑↑↓↓←→←→BA activates "RAVE MODE")
     └── sections/
         ├── HeroSection.tsx
         ├── AboutSection.tsx
@@ -54,9 +65,10 @@ src/
         ├── PortfolioSection.tsx
         ├── SpecialMomentsSection.tsx
         ├── ProcessSection.tsx
-        ├── TestimonialsSection.tsx
         ├── ContactSection.tsx
-        └── Footer.tsx
+        ├── Footer.tsx
+        └── archive/
+            └── TestimonialsSection.tsx  # Archived (no reviews available yet)
 ```
 
 ### Key Architectural Patterns
@@ -95,9 +107,10 @@ Used in:
 - `src/components/SpotifyFloatingButton.tsx` (floating button)
 
 ### Contact Information
-- Email: rai@raiclark.nl
-- Instagram: @raiclarkmusic
-- Website: https://raiclark.nl
+- **Email**: rai@raiclark.nl
+- **Phone/WhatsApp**: +31 6 28 20 64 10
+- **Instagram**: @rai.clark (https://www.instagram.com/rai.clark/)
+- **Website**: https://raiclark.nl
 
 Contact details are hardcoded in:
 - `src/components/sections/ContactSection.tsx`
@@ -133,21 +146,33 @@ Desktop-only cursor system (`src/components/CustomCursor.tsx`):
 - Trail effect with particles
 - Hidden on mobile (width <= 768px)
 
-### Form Handling
-Contact form in `ContactSection.tsx` uses react-hook-form but currently has **placeholder submission logic**.
+### Contact Form (Working)
+Contact form in `ContactSection.tsx` uses **react-hook-form** and is fully functional.
 
-To implement real form submission:
-- Option 1: Create `/src/app/api/contact/route.ts` for Next.js API route
-- Option 2: Integrate third-party service (Formspree, Basin, SendGrid)
+**Implementation**:
+- API Route: `/src/app/api/contact/route.ts`
+- Email Service: **Resend** (https://resend.com)
+- Sends emails to: `rai@raiclark.nl`
+- Fields: Name, Email, Project Type, Message (Budget field removed 7 Dec 2024)
+
+**Environment Setup**:
+- Requires `RESEND_API_KEY` in `.env.local` (local dev)
+- Must be added to Vercel environment variables (production)
+- Get API key from: https://resend.com/api-keys
+
+**Project Type Options**:
+- Persoonlijk liedje
+- Bruiloft
+- Jubileum
+- Verjaardag
+- Bedrijf
+- Content
+- Anders
 
 ## Known TODOs
 
-From README.md:
-- Implement actual form submission backend
-- Add real client testimonials (currently placeholder data)
-- Replace placeholder project cards with real work
+- Add real client testimonials (TestimonialsSection.tsx is archived - waiting for reviews)
 - Add Google Analytics tracking
-- Implement newsletter subscription
 - Add loading screen animation
 - Create custom 404 page design
 
@@ -158,9 +183,72 @@ From README.md:
 - Images should use Next.js Image component for optimization
 - Spotify embeds are iframes (potential performance hit)
 
-## Deployment
+## Development & Deployment Workflow
 
-Recommended: Vercel (optimized for Next.js)
-- Push to GitHub → Import to Vercel → Auto-deploy
-- Ensure environment variables are set if form submission is implemented
-- Domain should be configured to https://raiclark.nl
+### Standard Workflow
+1. **Local Development** (on Windows PC)
+   ```bash
+   npm run dev
+   # Server runs on http://localhost:3000
+   # Test all changes locally first
+   ```
+
+2. **Commit & Push to GitHub**
+   ```bash
+   git add .
+   git commit -m "Description of changes"
+   git push
+   ```
+
+3. **Automatic Deployment via Vercel**
+   - Vercel monitors the GitHub repository
+   - Automatically deploys on every push to `main` branch
+   - Live site: https://raiclark.nl
+   - Deployment takes ~1-2 minutes
+
+### Environment Variables in Vercel
+When deploying, ensure these environment variables are set in Vercel dashboard:
+
+1. Go to https://vercel.com/dashboard
+2. Select project: **rai-clark-website**
+3. Navigate to: **Settings → Environment Variables**
+4. Add required variables:
+   - `RESEND_API_KEY` = your Resend API key (for contact form)
+5. Select environments: **Production, Preview, Development**
+6. After adding/changing variables: **Redeploy** the site
+
+### First-Time Setup (Already Done)
+- Repository: https://github.com/declerckroy-spec/rai-clark-website
+- Hosting: Vercel (auto-deploys from GitHub)
+- Domain: https://raiclark.nl (configured in Vercel)
+
+---
+
+## Changelog
+
+### 7 December 2024 - Content Overhaul
+**Major content rewrite with artistic focus**
+
+**Changes:**
+- ✅ All section texts rewritten (Hero, About, Services, Portfolio, Process, Special Moments)
+- ✅ More emphasis on artistic work (releases, experimental tracks) alongside commissioned work
+- ✅ Tone: nuchter, eerlijk, direct Nederlands - no AI-clichés or em-dashes
+- ✅ Contact form now fully working (Resend API → rai@raiclark.nl)
+- ✅ Budget field removed from contact form
+- ✅ WhatsApp contact added: +31 6 28 20 64 10
+- ✅ Instagram updated to: @rai.clark
+- ✅ TestimonialsSection archived (no reviews available yet)
+- ✅ Footer simplified: newsletter and quick links removed
+- ✅ Hero subtitle changed: MUZIKANT → SONGWRITER
+- ✅ Dependencies added: `resend` package for email functionality
+
+**Content Philosophy:**
+Site now clearly communicates dual purpose:
+1. **Fansite**: Showcasing Het Beestenbal, Radio Clark (upcoming), experimental tracks
+2. **Order Platform**: Personal songs, wedding music, corporate audio
+
+**Technical:**
+- API route: `/src/app/api/contact/route.ts`
+- Environment variable required: `RESEND_API_KEY`
+- All changes committed and pushed to GitHub
+- Automatically deployed via Vercel
