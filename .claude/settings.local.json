@@ -17,7 +17,11 @@
       "Bash(mkdir:*)",
       "Bash(move:*)",
       "Bash(mv:*)",
-      "Bash(npm install:*)"
+      "Bash(npm install:*)",
+      "Bash(curl:*)",
+      "Bash(timeout:*)",
+      "Bash(exit 0)",
+      "Bash(ping:*)"
     ],
     "deny": [],
     "ask": []
