@@ -6,7 +6,7 @@ import { PartyPopper, Music, Sparkles, Zap } from 'lucide-react';
 import Link from 'next/link';
 
 export const metadata: Metadata = {
-  title: 'Feestlied Laten Maken | Party Anthem op Maat | Rai Clark',
+  title: 'Feestlied laten maken: persoonlijke party anthem',
   description:
     'Laat een energiek feestlied maken voor elk moment dat gevierd moet worden. Uptempo, meezingbaar en speciaal voor jouw feest. Van huisfeest tot festival - het perfecte party anthem.',
   keywords: [
@@ -37,7 +37,7 @@ export default function FeestLiedPage() {
     <PageLayout>
       <ServiceHero
         title="FEESTLIED"
-        subtitle="Het Ultieme Party Anthem"
+        subtitle="Het ultieme party anthem"
         description="Elk feest verdient een eigen soundtrack. Een uptempo, energiek feestlied dat iedereen meteen in de stemming brengt en de hele avond blijft hangen."
         icon={<PartyPopper className="w-10 h-10 text-white" />}
       />
@@ -46,7 +46,7 @@ export default function FeestLiedPage() {
         <div className="container mx-auto max-w-4xl">
           <div className="mb-20">
             <h2 className="font-display font-black text-4xl md:text-5xl uppercase mb-8 text-white">
-              Waarom een Feestlied?
+              Waarom een feestlied?
             </h2>
             <div className="space-y-6 text-lg text-gray-300 leading-relaxed">
               <p>
@@ -63,7 +63,7 @@ export default function FeestLiedPage() {
 
           <div className="mb-20">
             <h2 className="font-display font-black text-4xl md:text-5xl uppercase mb-8 text-white">
-              Hoe Werkt Het?
+              Hoe werkt het?
             </h2>
             <div className="space-y-8">
               <div className="flex gap-6 items-start">
@@ -71,7 +71,7 @@ export default function FeestLiedPage() {
                   <span className="text-vivid-yellow font-bold text-xl">1</span>
                 </div>
                 <div>
-                  <h3 className="font-display font-bold text-2xl mb-2 text-white">Vertel Over het Feest</h3>
+                  <h3 className="font-display font-bold text-2xl mb-2 text-white">Vertel over het feest</h3>
                   <p className="text-gray-300">
                     Wat wordt er gevierd? Wie is de hoofdpersoon? Welke inside jokes zijn er? Wat is de vibe van het feest? Hoe wilder het verhaal, hoe leuker het lied.
                   </p>
@@ -83,7 +83,7 @@ export default function FeestLiedPage() {
                   <span className="text-hot-pink font-bold text-xl">2</span>
                 </div>
                 <div>
-                  <h3 className="font-display font-bold text-2xl mb-2 text-white">Kies de Energie</h3>
+                  <h3 className="font-display font-bold text-2xl mb-2 text-white">Kies de energie</h3>
                   <p className="text-gray-300">
                     Uptempo EDM? Popsong met hook? Nederlandstalige feesthit?Rock anthem? We maken een track die perfect past bij de sfeer en het publiek.
                   </p>
@@ -95,7 +95,7 @@ export default function FeestLiedPage() {
                   <span className="text-electric-blue font-bold text-xl">3</span>
                 </div>
                 <div>
-                  <h3 className="font-display font-bold text-2xl mb-2 text-white">Draai het Af & Ga Los</h3>
+                  <h3 className="font-display font-bold text-2xl mb-2 text-white">Draai het af en ga los</h3>
                   <p className="text-gray-300">
                     Je krijgt een professioneel geproduceerd feestlied dat je kunt afspelen op je feest, delen met vrienden, of zelfs uploaden naar streamingdiensten.
                   </p>
@@ -106,7 +106,7 @@ export default function FeestLiedPage() {
 
           <div className="mb-20">
             <h2 className="font-display font-black text-4xl md:text-5xl uppercase mb-8 text-white">
-              Voor Welke Momenten?
+              Voor welke momenten?
             </h2>
             <div className="grid md:grid-cols-2 gap-6">
               <div className="p-6 rounded-2xl bg-secondary-black border-2 border-gray-800">
@@ -127,7 +127,7 @@ export default function FeestLiedPage() {
 
               <div className="p-6 rounded-2xl bg-secondary-black border-2 border-gray-800">
                 <Music className="w-8 h-8 text-electric-blue mb-4" />
-                <h3 className="font-display font-bold text-xl mb-2 text-white">Festival of Event</h3>
+                <h3 className="font-display font-bold text-xl mb-2 text-white">Festival of event</h3>
                 <p className="text-gray-300">
                   Een anthem voor een festival, evenement of grote bijeenkomst. Een lied dat de energie vastlegt en mensen verbindt.
                 </p>
@@ -145,7 +145,7 @@ export default function FeestLiedPage() {
 
           <div className="mb-20">
             <h2 className="font-display font-black text-4xl md:text-5xl uppercase mb-8 text-white">
-              Bekijk Ook
+              Bekijk ook
             </h2>
             <div className="flex flex-wrap gap-4">
               {relatedServices.map((service) => (

@@ -6,7 +6,7 @@ import { Snowflake, Music, Gift, Heart } from 'lucide-react';
 import Link from 'next/link';
 
 export const metadata: Metadata = {
-  title: 'Kerstlied Laten Maken | Persoonlijk Kerstcadeau | Rai Clark',
+  title: 'Kerstlied laten maken: uniek kerstcadeau',
   description:
     'Laat een uniek kerstlied maken voor je familie, vrienden of collega\'s. Een persoonlijk kerstcadeau dat blijft hangen. Van gezellig en warm tot vrolijk en feestelijk.',
   keywords: [
@@ -36,7 +36,7 @@ export default function KerstLiedPage() {
     <PageLayout>
       <ServiceHero
         title="KERSTLIED"
-        subtitle="Maak het de Mooiste Kerst Ooit"
+        subtitle="Maak het de mooiste kerst ooit"
         description="Kerst is het moment om samen te zijn met de mensen die je dierbaar zijn. Geef geen standaard cadeau, maar een persoonlijk kerstlied dat de warmte van jullie band vastlegt."
         icon={<Snowflake className="w-10 h-10 text-white" />}
       />
@@ -45,7 +45,7 @@ export default function KerstLiedPage() {
         <div className="container mx-auto max-w-4xl">
           <div className="mb-20">
             <h2 className="font-display font-black text-4xl md:text-5xl uppercase mb-8 text-white">
-              Waarom een Kerstlied?
+              Waarom een kerstlied?
             </h2>
             <div className="space-y-6 text-lg text-gray-300 leading-relaxed">
               <p>
@@ -62,7 +62,7 @@ export default function KerstLiedPage() {
 
           <div className="mb-20">
             <h2 className="font-display font-black text-4xl md:text-5xl uppercase mb-8 text-white">
-              Hoe Werkt Het?
+              Hoe werkt het?
             </h2>
             <div className="space-y-8">
               <div className="flex gap-6 items-start">
@@ -70,7 +70,7 @@ export default function KerstLiedPage() {
                   <span className="text-cyan-bright font-bold text-xl">1</span>
                 </div>
                 <div>
-                  <h3 className="font-display font-bold text-2xl mb-2 text-white">Deel Kerstverhalen</h3>
+                  <h3 className="font-display font-bold text-2xl mb-2 text-white">Deel kerstverhalen</h3>
                   <p className="text-gray-300">
                     Wat zijn jullie kerst tradities? Welke grappige momenten zijn er? Wie maakt er altijd het eten? Wat maakt kerst bij jullie speciaal? Hoe meer details, hoe persoonlijker.
                   </p>
@@ -82,7 +82,7 @@ export default function KerstLiedPage() {
                   <span className="text-hot-pink font-bold text-xl">2</span>
                 </div>
                 <div>
-                  <h3 className="font-display font-bold text-2xl mb-2 text-white">Kies de Kerstsfeer</h3>
+                  <h3 className="font-display font-bold text-2xl mb-2 text-white">Kies de kerstsfeer</h3>
                   <p className="text-gray-300">
                     Klassiek kerstgevoel met piano en strijkers? Vrolijk en uptempo? Akoestisch en intiem? We maken precies het kerstlied dat bij jullie past.
                   </p>
@@ -94,7 +94,7 @@ export default function KerstLiedPage() {
                   <span className="text-electric-blue font-bold text-xl">3</span>
                 </div>
                 <div>
-                  <h3 className="font-display font-bold text-2xl mb-2 text-white">Vier Kerst met Muziek</h3>
+                  <h3 className="font-display font-bold text-2xl mb-2 text-white">Vier kerst met muziek</h3>
                   <p className="text-gray-300">
                     Draai het lied af tijdens het kerstdiner en zie de reacties. Je krijgt een hoogwaardige audiofile om elk jaar opnieuw te beluisteren.
                   </p>
@@ -105,12 +105,12 @@ export default function KerstLiedPage() {
 
           <div className="mb-20">
             <h2 className="font-display font-black text-4xl md:text-5xl uppercase mb-8 text-white">
-              Voor Welke Momenten?
+              Voor welke momenten?
             </h2>
             <div className="grid md:grid-cols-2 gap-6">
               <div className="p-6 rounded-2xl bg-secondary-black border-2 border-gray-800">
                 <Snowflake className="w-8 h-8 text-cyan-bright mb-4" />
-                <h3 className="font-display font-bold text-xl mb-2 text-white">Kerstdiner Familie</h3>
+                <h3 className="font-display font-bold text-xl mb-2 text-white">Kerstdiner familie</h3>
                 <p className="text-gray-300">
                   Een lied speciaal voor de familie tijdens het kerstdiner. Vol inside jokes, tradities en warme herinneringen.
                 </p>
@@ -134,7 +134,7 @@ export default function KerstLiedPage() {
 
               <div className="p-6 rounded-2xl bg-secondary-black border-2 border-gray-800">
                 <Heart className="w-8 h-8 text-vivid-yellow mb-4" />
-                <h3 className="font-display font-bold text-xl mb-2 text-white">Jaarlijkse Traditie</h3>
+                <h3 className="font-display font-bold text-xl mb-2 text-white">Jaarlijkse traditie</h3>
                 <p className="text-gray-300">
                   Een kerstlied dat elk jaar terugkomt. Een nieuwe traditie die de jaren verbindt en elk jaar opnieuw warmte brengt.
                 </p>
@@ -144,7 +144,7 @@ export default function KerstLiedPage() {
 
           <div className="mb-20">
             <h2 className="font-display font-black text-4xl md:text-5xl uppercase mb-8 text-white">
-              Bekijk Ook
+              Bekijk ook
             </h2>
             <div className="flex flex-wrap gap-4">
               {relatedServices.map((service) => (

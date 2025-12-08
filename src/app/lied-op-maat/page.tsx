@@ -5,7 +5,7 @@ import { Music2, Heart, PartyPopper, Users, Briefcase, Baby, Cake, Flower2, Gift
 import Link from 'next/link';
 
 export const metadata: Metadata = {
-  title: 'Lied op Maat Laten Maken | Alle Gelegenheden | Rai Clark',
+  title: 'Lied op maat laten maken voor alle gelegenheden',
   description:
     'Laat een persoonlijk lied op maat maken voor elke gelegenheid. Van verjaardag tot bruiloft, van pensioen tot geboorte. Bekijk alle mogelijkheden en kies de perfecte service.',
   keywords: [
@@ -176,7 +176,7 @@ export default function LiedOpMaatPage() {
     <PageLayout>
       <ServiceHero
         title="LIED OP MAAT"
-        subtitle="Kies Jouw Gelegenheid"
+        subtitle="Kies jouw gelegenheid"
         description="Van verjaardag tot bruiloft, van pensioen tot geboorte. Wat je ook wilt vieren, herdenken of vieren: ik maak er muziek van."
         icon={<Music2 className="w-10 h-10 text-white" />}
       />
@@ -187,7 +187,7 @@ export default function LiedOpMaatPage() {
           {/* Intro */}
           <div className="max-w-3xl mx-auto text-center mb-16">
             <h2 className="font-display font-black text-4xl md:text-5xl uppercase mb-6 text-white">
-              Voor Elke Gelegenheid
+              Voor elke gelegenheid
             </h2>
             <p className="text-lg text-gray-300 leading-relaxed">
               Een persoonlijk lied is het ultieme cadeau. Uniek, emotioneel en onvergetelijk. Kies hieronder de gelegenheid die bij jou past, of scroll verder voor algemene informatie.
@@ -231,7 +231,7 @@ export default function LiedOpMaatPage() {
           {/* How It Works Section */}
           <div className="max-w-4xl mx-auto mb-20">
             <h2 className="font-display font-black text-4xl md:text-5xl uppercase mb-12 text-center text-white">
-              Hoe Werkt Het?
+              Hoe werkt het?
             </h2>
             <div className="space-y-8">
               <div className="flex gap-6 items-start">
@@ -239,7 +239,7 @@ export default function LiedOpMaatPage() {
                   <span className="text-electric-blue font-bold text-xl">1</span>
                 </div>
                 <div>
-                  <h3 className="font-display font-bold text-2xl mb-2 text-white">Kies Je Gelegenheid</h3>
+                  <h3 className="font-display font-bold text-2xl mb-2 text-white">Kies je gelegenheid</h3>
                   <p className="text-gray-300 text-lg">
                     Klik op de gelegenheid die bij jou past en vul het contactformulier in. Vertel me jouw verhaal, de persoon waar het over gaat, en wat je voor ogen hebt.
                   </p>
@@ -251,7 +251,7 @@ export default function LiedOpMaatPage() {
                   <span className="text-hot-pink font-bold text-xl">2</span>
                 </div>
                 <div>
-                  <h3 className="font-display font-bold text-2xl mb-2 text-white">Samen de Details Bepalen</h3>
+                  <h3 className="font-display font-bold text-2xl mb-2 text-white">Samen de details bepalen</h3>
                   <p className="text-gray-300 text-lg">
                     We stemmen de muziekstijl, toon en inhoud samen af. Grappig of emotioneel? Uptempo of rustig? Alles is bespreekbaar en wordt precies zoals jij het wilt.
                   </p>
@@ -263,7 +263,7 @@ export default function LiedOpMaatPage() {
                   <span className="text-cyan-bright font-bold text-xl">3</span>
                 </div>
                 <div>
-                  <h3 className="font-display font-bold text-2xl mb-2 text-white">Ontvang Je Lied</h3>
+                  <h3 className="font-display font-bold text-2xl mb-2 text-white">Ontvang je lied</h3>
                   <p className="text-gray-300 text-lg">
                     Je krijgt eerst een demo om feedback te geven. Na eventuele aanpassingen ontvang je de finale versie als hoogwaardige audiofile, klaar om te delen.
                   </p>
@@ -275,7 +275,7 @@ export default function LiedOpMaatPage() {
           {/* CTA Section */}
           <div className="max-w-3xl mx-auto text-center">
             <h2 className="font-display font-black text-4xl md:text-5xl uppercase mb-6 text-white">
-              Nog Vragen?
+              Nog vragen?
             </h2>
             <p className="text-lg text-gray-300 mb-8">
               Bekijk de veelgestelde vragen of neem direct contact op. Ik help je graag verder.
@@ -283,12 +283,12 @@ export default function LiedOpMaatPage() {
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Link href="/faq">
                 <button className="px-8 py-4 border-2 border-cyan-bright text-cyan-bright font-bold uppercase tracking-wider rounded-lg hover:bg-cyan-bright hover:text-black smooth-transition">
-                  Bekijk FAQ
+                  Bekijk faq
                 </button>
               </Link>
               <a href="#contact">
                 <button className="px-8 py-4 bg-gradient-to-r from-hot-pink to-magenta text-white font-bold uppercase tracking-wider rounded-lg smooth-transition hover:shadow-neon-pink">
-                  Neem Contact Op
+                  Neem contact op
                 </button>
               </a>
             </div>

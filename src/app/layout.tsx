@@ -28,6 +28,16 @@ export const metadata: Metadata = {
   alternates: {
     canonical: '/',
   },
+  icons: {
+    icon: [
+      { url: '/icon?v=2', type: 'image/png', sizes: '32x32' },
+      { url: '/icon-192?v=2', type: 'image/png', sizes: '192x192' },
+      { url: '/icon-512?v=2', type: 'image/png', sizes: '512x512' },
+    ],
+    apple: [
+      { url: '/apple-icon?v=2', type: 'image/png', sizes: '180x180' },
+    ],
+  },
   openGraph: {
     type: 'website',
     locale: 'nl_NL',
@@ -157,14 +167,18 @@ export default function RootLayout({
           }}
         />
 
-        {/* Favicon and App Icons */}
-        <link rel="icon" href="/favicon.ico" sizes="any" />
-        <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+        {/* PWA Manifest */}
         <link rel="manifest" href="/manifest.json" />
 
         {/* Theme Color */}
         <meta name="theme-color" content="#0A0A0A" />
         <meta name="msapplication-TileColor" content="#0066FF" />
+
+        {/* Additional SEO meta tags */}
+        <meta name="format-detection" content="telephone=no" />
+        <meta name="mobile-web-app-capable" content="yes" />
+        <meta name="apple-mobile-web-app-capable" content="yes" />
+        <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
       </head>
       <body>{children}</body>
     </html>

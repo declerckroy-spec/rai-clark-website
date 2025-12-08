@@ -6,7 +6,7 @@ import { Gift, Music, Heart, Sparkles } from 'lucide-react';
 import Link from 'next/link';
 
 export const metadata: Metadata = {
-  title: 'Muziekcadeau Laten Maken | Persoonlijk Lied als Cadeau | Rai Clark',
+  title: 'Muziekcadeau laten maken: persoonlijk lied',
   description:
     'Laat een uniek lied maken als cadeau voor iemand die je dierbaar is. Het meest persoonlijke cadeau voor elke gelegenheid. Een lied dat blijft hangen en altijd herinnerd wordt.',
   keywords: [
@@ -37,7 +37,7 @@ export default function MuziekcadeauLiedPage() {
     <PageLayout>
       <ServiceHero
         title="MUZIEKCADEAU"
-        subtitle="Het Cadeau dat Blijft"
+        subtitle="Het cadeau dat blijft"
         description="Een cadeau vinden dat écht bijzonder is? Maak een persoonlijk lied. Voor elke gelegenheid, voor iedereen die je dierbaar is. Het meest originele cadeau dat blijft hangen."
         icon={<Gift className="w-10 h-10 text-white" />}
       />
@@ -46,7 +46,7 @@ export default function MuziekcadeauLiedPage() {
         <div className="container mx-auto max-w-4xl">
           <div className="mb-20">
             <h2 className="font-display font-black text-4xl md:text-5xl uppercase mb-8 text-white">
-              Waarom Muziek als Cadeau?
+              Waarom muziek als cadeau?
             </h2>
             <div className="space-y-6 text-lg text-gray-300 leading-relaxed">
               <p>
@@ -63,7 +63,7 @@ export default function MuziekcadeauLiedPage() {
 
           <div className="mb-20">
             <h2 className="font-display font-black text-4xl md:text-5xl uppercase mb-8 text-white">
-              Hoe Werkt Het?
+              Hoe werkt het?
             </h2>
             <div className="space-y-8">
               <div className="flex gap-6 items-start">
@@ -71,7 +71,7 @@ export default function MuziekcadeauLiedPage() {
                   <span className="text-hot-pink font-bold text-xl">1</span>
                 </div>
                 <div>
-                  <h3 className="font-display font-bold text-2xl mb-2 text-white">Vertel Over de Persoon</h3>
+                  <h3 className="font-display font-bold text-2xl mb-2 text-white">Vertel over de persoon</h3>
                   <p className="text-gray-300">
                     Wie is de persoon? Wat maakt hem of haar bijzonder? Welke herinneringen hebben jullie? Wat wil je zeggen met dit cadeau? Hoe meer je deelt, hoe persoonlijker het lied.
                   </p>
@@ -83,7 +83,7 @@ export default function MuziekcadeauLiedPage() {
                   <span className="text-electric-blue font-bold text-xl">2</span>
                 </div>
                 <div>
-                  <h3 className="font-display font-bold text-2xl mb-2 text-white">Kies de Stijl</h3>
+                  <h3 className="font-display font-bold text-2xl mb-2 text-white">Kies de stijl</h3>
                   <p className="text-gray-300">
                     Emotioneel en ontroerend? Grappig en luchtig? Uptempo en energiek? We stemmen de muziekstijl af op de persoon en de boodschap die je wilt overbrengen.
                   </p>
@@ -95,7 +95,7 @@ export default function MuziekcadeauLiedPage() {
                   <span className="text-cyan-bright font-bold text-xl">3</span>
                 </div>
                 <div>
-                  <h3 className="font-display font-bold text-2xl mb-2 text-white">Geef & Verras</h3>
+                  <h3 className="font-display font-bold text-2xl mb-2 text-white">Geef en verras</h3>
                   <p className="text-gray-300">
                     Je krijgt een professioneel geproduceerd lied in topkwaliteit. Geef het cadeau en zie de reactie. Een moment om nooit te vergeten.
                   </p>
@@ -106,7 +106,7 @@ export default function MuziekcadeauLiedPage() {
 
           <div className="mb-20">
             <h2 className="font-display font-black text-4xl md:text-5xl uppercase mb-8 text-white">
-              Voor Welke Momenten?
+              Voor welke momenten?
             </h2>
             <div className="grid md:grid-cols-2 gap-6">
               <div className="p-6 rounded-2xl bg-secondary-black border-2 border-gray-800">
@@ -119,7 +119,7 @@ export default function MuziekcadeauLiedPage() {
 
               <div className="p-6 rounded-2xl bg-secondary-black border-2 border-gray-800">
                 <Heart className="w-8 h-8 text-electric-blue mb-4" />
-                <h3 className="font-display font-bold text-xl mb-2 text-white">Dank Je Wel</h3>
+                <h3 className="font-display font-bold text-xl mb-2 text-white">Dank je wel</h3>
                 <p className="text-gray-300">
                   Een muzikale manier om iemand te bedanken. Voor een leraar, mentor, vriend, of iemand die er voor je was.
                 </p>
@@ -127,7 +127,7 @@ export default function MuziekcadeauLiedPage() {
 
               <div className="p-6 rounded-2xl bg-secondary-black border-2 border-gray-800">
                 <Sparkles className="w-8 h-8 text-cyan-bright mb-4" />
-                <h3 className="font-display font-bold text-xl mb-2 text-white">Jubileum of Mijlpaal</h3>
+                <h3 className="font-display font-bold text-xl mb-2 text-white">Jubileum of mijlpaal</h3>
                 <p className="text-gray-300">
                   Vier een bijzondere mijlpaal met een lied: 25 jaar samen, afstuderen, promotie, of een ander belangrijk moment.
                 </p>
@@ -145,7 +145,7 @@ export default function MuziekcadeauLiedPage() {
 
           <div className="mb-20">
             <h2 className="font-display font-black text-4xl md:text-5xl uppercase mb-8 text-white">
-              Bekijk Ook
+              Bekijk ook
             </h2>
             <div className="flex flex-wrap gap-4">
               {relatedServices.map((service) => (

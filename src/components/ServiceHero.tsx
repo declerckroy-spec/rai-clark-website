@@ -85,7 +85,7 @@ export default function ServiceHero({ title, subtitle, description, icon }: Serv
           transition={{ duration: 0.8, delay: 0.4 }}
           className="mb-8"
         >
-          <h1 className="font-display font-black text-5xl md:text-7xl lg:text-8xl neon-text uppercase tracking-tight">
+          <h1 className="font-display font-black text-4xl md:text-7xl lg:text-8xl neon-text uppercase tracking-normal break-words">
             {title}
           </h1>
         </motion.div>

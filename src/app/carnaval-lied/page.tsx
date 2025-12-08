@@ -6,7 +6,7 @@ import { PartyPopper, Music, Users, Zap } from 'lucide-react';
 import Link from 'next/link';
 
 export const metadata: Metadata = {
-  title: 'Carnavalslied Laten Maken | Kroegenhit op Maat | Rai Clark',
+  title: 'Carnavalslied laten maken: je eigen kroegenhit',
   description:
     'Laat een meezingbaar carnavalslied maken voor je vriendengroep, kroeg of carnavalsvereniging. Een uptempo kroegenhit die de hele tent meezingt. Perfect voor carnaval 2025!',
   keywords: [
@@ -37,7 +37,7 @@ export default function CarnavalLiedPage() {
     <PageLayout>
       <ServiceHero
         title="CARNAVALSLIED"
-        subtitle="Je Eigen Kroegenhit"
+        subtitle="Je eigen kroegenhit"
         description="Carnaval zonder een eigen lied? Dat kan niet. Laat een meezingbaar carnavalslied maken dat de hele kroeg uit volle borst meebrult. Uptempo, simpel, en 100% feest."
         icon={<PartyPopper className="w-10 h-10 text-white" />}
       />
@@ -46,7 +46,7 @@ export default function CarnavalLiedPage() {
         <div className="container mx-auto max-w-4xl">
           <div className="mb-20">
             <h2 className="font-display font-black text-4xl md:text-5xl uppercase mb-8 text-white">
-              Waarom een Carnavalslied?
+              Waarom een carnavalslied?
             </h2>
             <div className="space-y-6 text-lg text-gray-300 leading-relaxed">
               <p>
@@ -63,7 +63,7 @@ export default function CarnavalLiedPage() {
 
           <div className="mb-20">
             <h2 className="font-display font-black text-4xl md:text-5xl uppercase mb-8 text-white">
-              Hoe Werkt Het?
+              Hoe werkt het?
             </h2>
             <div className="space-y-8">
               <div className="flex gap-6 items-start">
@@ -71,7 +71,7 @@ export default function CarnavalLiedPage() {
                   <span className="text-vivid-yellow font-bold text-xl">1</span>
                 </div>
                 <div>
-                  <h3 className="font-display font-bold text-2xl mb-2 text-white">Verzamel Verhalen</h3>
+                  <h3 className="font-display font-bold text-2xl mb-2 text-white">Verzamel verhalen</h3>
                   <p className="text-gray-300">
                     Waar gaat het lied over? De vriendengroep? De kroeg? Inside jokes van vorige carnavals? Hoe grappiger en gekker, hoe beter het werkt.
                   </p>
@@ -83,7 +83,7 @@ export default function CarnavalLiedPage() {
                   <span className="text-hot-pink font-bold text-xl">2</span>
                 </div>
                 <div>
-                  <h3 className="font-display font-bold text-2xl mb-2 text-white">Maak het Meezingbaar</h3>
+                  <h3 className="font-display font-bold text-2xl mb-2 text-white">Maak het meezingbaar</h3>
                   <p className="text-gray-300">
                     We maken een uptempo carnavalshit met een simpel refrein dat iedereen direct kan meezingen. Denk aan: veel energie, simpele tekst, onweerstaanbare hook.
                   </p>
@@ -95,7 +95,7 @@ export default function CarnavalLiedPage() {
                   <span className="text-electric-blue font-bold text-xl">3</span>
                 </div>
                 <div>
-                  <h3 className="font-display font-bold text-2xl mb-2 text-white">Draai het in de Kroeg</h3>
+                  <h3 className="font-display font-bold text-2xl mb-2 text-white">Draai het in de kroeg</h3>
                   <p className="text-gray-300">
                     Je krijgt een professioneel geproduceerd carnavalslied klaar om af te spelen tijdens carnaval. En wie weet wordt het de nieuwe kroegenhit.
                   </p>
@@ -106,7 +106,7 @@ export default function CarnavalLiedPage() {
 
           <div className="mb-20">
             <h2 className="font-display font-black text-4xl md:text-5xl uppercase mb-8 text-white">
-              Voor Welke Momenten?
+              Voor welke momenten?
             </h2>
             <div className="grid md:grid-cols-2 gap-6">
               <div className="p-6 rounded-2xl bg-secondary-black border-2 border-gray-800">
@@ -119,7 +119,7 @@ export default function CarnavalLiedPage() {
 
               <div className="p-6 rounded-2xl bg-secondary-black border-2 border-gray-800">
                 <Music className="w-8 h-8 text-hot-pink mb-4" />
-                <h3 className="font-display font-bold text-xl mb-2 text-white">Kroeg of Café</h3>
+                <h3 className="font-display font-bold text-xl mb-2 text-white">Kroeg of café</h3>
                 <p className="text-gray-300">
                   Een lied speciaal voor de kroeg waar jullie altijd zitten tijdens carnaval. De ultieme kroegenhit voor de stamgasten.
                 </p>
@@ -145,7 +145,7 @@ export default function CarnavalLiedPage() {
 
           <div className="mb-20">
             <h2 className="font-display font-black text-4xl md:text-5xl uppercase mb-8 text-white">
-              Bekijk Ook
+              Bekijk ook
             </h2>
             <div className="flex flex-wrap gap-4">
               {relatedServices.map((service) => (

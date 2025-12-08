@@ -6,7 +6,7 @@ import { Heart, Music, Star, Sparkles } from 'lucide-react';
 import Link from 'next/link';
 
 export const metadata: Metadata = {
-  title: 'Herinneringslied Laten Maken | Herdenkingslied & Rouwlied | Rai Clark',
+  title: 'Herinneringslied laten maken | Herdenkingslied',
   description:
     'Laat een persoonlijk herinneringslied maken ter nagedachtenis aan een dierbare. Een liefdevolle manier om een overledene te herdenken en herinneringen te koesteren. Warm, oprecht en troostend.',
   keywords: [
@@ -37,7 +37,7 @@ export default function HerinnеringsliedPage() {
     <PageLayout>
       <ServiceHero
         title="HERINNERINGSLIED"
-        subtitle="Een Muzikaal Eerbetoon"
+        subtitle="Een muzikaal eerbetoon"
         description="Herdenk een dierbare op een manier die recht doet aan het leven dat geleefd is. Een persoonlijk herinneringslied dat troost biedt en mooie herinneringen vasthoudt."
         icon={<Heart className="w-10 h-10 text-white" />}
       />
@@ -46,7 +46,7 @@ export default function HerinnеringsliedPage() {
         <div className="container mx-auto max-w-4xl">
           <div className="mb-20">
             <h2 className="font-display font-black text-4xl md:text-5xl uppercase mb-8 text-white">
-              Waarom een Herinneringslied?
+              Waarom een herinneringslied?
             </h2>
             <div className="space-y-6 text-lg text-gray-300 leading-relaxed">
               <p>
@@ -63,7 +63,7 @@ export default function HerinnеringsliedPage() {
 
           <div className="mb-20">
             <h2 className="font-display font-black text-4xl md:text-5xl uppercase mb-8 text-white">
-              Hoe Werkt Het?
+              Hoe werkt het?
             </h2>
             <div className="space-y-8">
               <div className="flex gap-6 items-start">
@@ -71,7 +71,7 @@ export default function HerinnеringsliedPage() {
                   <span className="text-cyan-bright font-bold text-xl">1</span>
                 </div>
                 <div>
-                  <h3 className="font-display font-bold text-2xl mb-2 text-white">Deel Herinneringen</h3>
+                  <h3 className="font-display font-bold text-2xl mb-2 text-white">Deel herinneringen</h3>
                   <p className="text-gray-300">
                     Vertel over de persoon die je verloren hebt. Wat maakte hem of haar bijzonder? Welke momenten koester je? Welke eigenschappen blijven bij? We werken met respect en zorgvuldigheid.
                   </p>
@@ -83,7 +83,7 @@ export default function HerinnеringsliedPage() {
                   <span className="text-electric-blue font-bold text-xl">2</span>
                 </div>
                 <div>
-                  <h3 className="font-display font-bold text-2xl mb-2 text-white">Kies de Sfeer</h3>
+                  <h3 className="font-display font-bold text-2xl mb-2 text-white">Kies de sfeer</h3>
                   <p className="text-gray-300">
                     Rustig en troostend? Hoopvol en liefdevol? Akoestisch en intiem? We stemmen de muziek af op wat voelt als een passend eerbetoon.
                   </p>
@@ -95,7 +95,7 @@ export default function HerinnеringsliedPage() {
                   <span className="text-hot-pink font-bold text-xl">3</span>
                 </div>
                 <div>
-                  <h3 className="font-display font-bold text-2xl mb-2 text-white">Koester het Lied</h3>
+                  <h3 className="font-display font-bold text-2xl mb-2 text-white">Koester het lied</h3>
                   <p className="text-gray-300">
                     Je ontvangt een hoogwaardige audiofile om te bewaren, te delen met familie, of af te spelen tijdens een herdenkingsmoment. Een blijvende muzikale herinnering.
                   </p>
@@ -106,12 +106,12 @@ export default function HerinnеringsliedPage() {
 
           <div className="mb-20">
             <h2 className="font-display font-black text-4xl md:text-5xl uppercase mb-8 text-white">
-              Voor Welke Momenten?
+              Voor welke momenten?
             </h2>
             <div className="grid md:grid-cols-2 gap-6">
               <div className="p-6 rounded-2xl bg-secondary-black border-2 border-gray-800">
                 <Music className="w-8 h-8 text-cyan-bright mb-4" />
-                <h3 className="font-display font-bold text-xl mb-2 text-white">Uitvaart of Herdenkingsdienst</h3>
+                <h3 className="font-display font-bold text-xl mb-2 text-white">Uitvaart of herdenkingsdienst</h3>
                 <p className="text-gray-300">
                   Een persoonlijk lied dat gespeeld wordt tijdens de uitvaart. Een muzikaal eerbetoon dat raakt en past bij de persoon die herdacht wordt.
                 </p>
@@ -127,7 +127,7 @@ export default function HerinnеringsliedPage() {
 
               <div className="p-6 rounded-2xl bg-secondary-black border-2 border-gray-800">
                 <Star className="w-8 h-8 text-hot-pink mb-4" />
-                <h3 className="font-display font-bold text-xl mb-2 text-white">Jaarlijkse Herdenking</h3>
+                <h3 className="font-display font-bold text-xl mb-2 text-white">Jaarlijkse herdenking</h3>
                 <p className="text-gray-300">
                   Een lied om elk jaar opnieuw te beluisteren op de sterfdag of verjaardag. Een troostende herinnering aan een dierbaar persoon.
                 </p>
@@ -135,7 +135,7 @@ export default function HerinnеringsliedPage() {
 
               <div className="p-6 rounded-2xl bg-secondary-black border-2 border-gray-800">
                 <Sparkles className="w-8 h-8 text-vivid-yellow mb-4" />
-                <h3 className="font-display font-bold text-xl mb-2 text-white">Persoonlijk Verwerking</h3>
+                <h3 className="font-display font-bold text-xl mb-2 text-white">Persoonlijke verwerking</h3>
                 <p className="text-gray-300">
                   Een lied voor jezelf, om te helpen bij het verwerken van het verlies en om herinneringen levend te houden.
                 </p>
@@ -145,7 +145,7 @@ export default function HerinnеringsliedPage() {
 
           <div className="mb-20">
             <h2 className="font-display font-black text-4xl md:text-5xl uppercase mb-8 text-white">
-              Bekijk Ook
+              Bekijk ook
             </h2>
             <div className="flex flex-wrap gap-4">
               {relatedServices.map((service) => (

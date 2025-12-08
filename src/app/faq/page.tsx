@@ -140,7 +140,7 @@ export default function FAQPage() {
     <PageLayout>
       <ServiceHero
         title="FAQ"
-        subtitle="Veelgestelde Vragen"
+        subtitle="Veelgestelde vragen"
         description="Antwoorden op de meest gestelde vragen over persoonlijke liedjes laten maken. Staat je vraag er niet bij? Neem contact op."
         icon={<HelpCircle className="w-10 h-10 text-white" />}
       />
@@ -177,7 +177,7 @@ export default function FAQPage() {
           {/* Contact CTA */}
           <div className="mt-20 p-8 rounded-2xl bg-gradient-to-br from-electric-blue to-cyan-bright bg-opacity-10 border-2 border-electric-blue border-opacity-30">
             <h2 className="font-display font-bold text-2xl uppercase mb-4 text-white text-center">
-              Staat Je Vraag Er Niet Bij?
+              Staat je vraag er niet bij?
             </h2>
             <p className="text-gray-300 text-center mb-6">
               Geen probleem! Neem contact op en ik beantwoord al je vragen persoonlijk.
@@ -185,12 +185,12 @@ export default function FAQPage() {
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <a href="/#contact">
                 <button className="px-8 py-4 bg-gradient-to-r from-hot-pink to-magenta text-white font-bold uppercase tracking-wider rounded-lg smooth-transition hover:shadow-neon-pink">
-                  Neem Contact Op
+                  Neem contact op
                 </button>
               </a>
               <Link href="/lied-op-maat">
                 <button className="px-8 py-4 border-2 border-cyan-bright text-cyan-bright font-bold uppercase tracking-wider rounded-lg hover:bg-cyan-bright hover:text-black smooth-transition">
-                  Bekijk Alle Diensten
+                  Bekijk alle diensten
                 </button>
               </Link>
             </div>

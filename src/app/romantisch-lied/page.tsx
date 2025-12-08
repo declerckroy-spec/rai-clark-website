@@ -6,7 +6,7 @@ import { Heart, Music, Sparkles, Gift } from 'lucide-react';
 import Link from 'next/link';
 
 export const metadata: Metadata = {
-  title: 'Romantisch Lied Laten Maken | Liefdesliedje voor Partner | Rai Clark',
+  title: 'Romantisch lied laten maken | Liefdesliedje partner',
   description:
     'Laat een persoonlijk romantisch lied maken voor je partner. Perfect voor Valentijnsdag, jubileum, verjaardag of gewoon omdat je van hem of haar houdt. Een liefdeslied dat blijft hangen.',
   keywords: [
@@ -37,7 +37,7 @@ export default function RomantischLiedPage() {
     <PageLayout>
       <ServiceHero
         title="ROMANTISCH LIED"
-        subtitle="Liefde in Muziek"
+        subtitle="Liefde in muziek"
         description="Soms zeggen woorden niet genoeg. Een persoonlijk romantisch lied zegt alles wat je voelt, op een manier die blijft hangen. Voor Valentijnsdag, jubileum, verjaardag, of gewoon omdat je van hem of haar houdt."
         icon={<Heart className="w-10 h-10 text-white" />}
       />
@@ -46,7 +46,7 @@ export default function RomantischLiedPage() {
         <div className="container mx-auto max-w-4xl">
           <div className="mb-20">
             <h2 className="font-display font-black text-4xl md:text-5xl uppercase mb-8 text-white">
-              Waarom een Romantisch Lied?
+              Waarom een romantisch lied?
             </h2>
             <div className="space-y-6 text-lg text-gray-300 leading-relaxed">
               <p>

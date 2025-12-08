@@ -6,7 +6,7 @@ import { Heart, Flower2 } from 'lucide-react';
 import Link from 'next/link';
 
 export const metadata: Metadata = {
-  title: 'Moederdaglied Laten Maken | Persoonlijk Cadeau voor Mama | Rai Clark',
+  title: 'Moederdaglied laten maken | Persoonlijk cadeau mama',
   description:
     'Laat een uniek moederdaglied maken voor je moeder. Het perfecte persoonlijke cadeau voor Moederdag. Emotioneel, dankbaar en lief - een lied dat blijft hangen.',
   keywords: [
@@ -35,7 +35,7 @@ export default function MoederdagLiedPage() {
     <PageLayout>
       <ServiceHero
         title="MOEDERDAGLIED"
-        subtitle="Voor de Beste Moeder"
+        subtitle="Voor de beste moeder"
         description="Je moeder heeft alles voor je gedaan. Tijd om te laten zien hoeveel ze betekent met een persoonlijk moederdaglied."
         icon={<Heart className="w-10 h-10 text-white" />}
       />
@@ -44,7 +44,7 @@ export default function MoederdagLiedPage() {
         <div className="container mx-auto max-w-4xl">
           <div className="mb-20">
             <h2 className="font-display font-black text-4xl md:text-5xl uppercase mb-8 text-white">
-              Waarom een Moederdaglied?
+              Waarom een moederdaglied?
             </h2>
             <div className="space-y-6 text-lg text-gray-300 leading-relaxed">
               <p>
@@ -61,7 +61,7 @@ export default function MoederdagLiedPage() {
 
           <div className="mb-20">
             <h2 className="font-display font-black text-4xl md:text-5xl uppercase mb-8 text-white">
-              Hoe Werkt Het?
+              Hoe werkt het?
             </h2>
             <div className="space-y-8">
               <div className="flex gap-6 items-start">
@@ -69,7 +69,7 @@ export default function MoederdagLiedPage() {
                   <span className="text-hot-pink font-bold text-xl">1</span>
                 </div>
                 <div>
-                  <h3 className="font-display font-bold text-2xl mb-2 text-white">Vertel Over Je Moeder</h3>
+                  <h3 className="font-display font-bold text-2xl mb-2 text-white">Vertel over je moeder</h3>
                   <p className="text-gray-300">
                     Wat maakt je moeder bijzonder? Welke herinneringen zijn onvergetelijk? Wat zou je haar willen zeggen in een lied? Hoe meer persoonlijke details, hoe mooier het wordt.
                   </p>
@@ -81,7 +81,7 @@ export default function MoederdagLiedPage() {
                   <span className="text-electric-blue font-bold text-xl">2</span>
                 </div>
                 <div>
-                  <h3 className="font-display font-bold text-2xl mb-2 text-white">Kies de Sfeer</h3>
+                  <h3 className="font-display font-bold text-2xl mb-2 text-white">Kies de sfeer</h3>
                   <p className="text-gray-300">
                     Moet het ontroerend zijn? Warm en lief? Met een vleugje humor? We stemmen de muziekstijl en toon af op wat bij jullie relatie past.
                   </p>
@@ -93,7 +93,7 @@ export default function MoederdagLiedPage() {
                   <span className="text-cyan-bright font-bold text-xl">3</span>
                 </div>
                 <div>
-                  <h3 className="font-display font-bold text-2xl mb-2 text-white">Verras Je Moeder</h3>
+                  <h3 className="font-display font-bold text-2xl mb-2 text-white">Verras je moeder</h3>
                   <p className="text-gray-300">
                     Geef het lied cadeau op Moederdag, haar verjaardag, of zomaar. Zie haar gezicht wanneer ze beseft dat je een heel lied speciaal voor haar hebt laten maken.
                   </p>
@@ -104,7 +104,7 @@ export default function MoederdagLiedPage() {
 
           <div className="mb-20">
             <h2 className="font-display font-black text-4xl md:text-5xl uppercase mb-8 text-white">
-              Voor Welke Momenten?
+              Voor welke momenten?
             </h2>
             <div className="grid md:grid-cols-2 gap-6">
               <div className="p-6 rounded-2xl bg-secondary-black border-2 border-gray-800">
@@ -143,7 +143,7 @@ export default function MoederdagLiedPage() {
 
           <div className="mb-20">
             <h2 className="font-display font-black text-4xl md:text-5xl uppercase mb-8 text-white">
-              Bekijk Ook
+              Bekijk ook
             </h2>
             <div className="flex flex-wrap gap-4">
               {relatedServices.map((service) => (

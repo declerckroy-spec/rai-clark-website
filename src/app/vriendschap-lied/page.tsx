@@ -6,7 +6,7 @@ import { Heart, Users, Sparkles } from 'lucide-react';
 import Link from 'next/link';
 
 export const metadata: Metadata = {
-  title: 'Vriendschapslied Laten Maken | Cadeau voor Beste Vriend | Rai Clark',
+  title: 'Vriendschapslied laten maken | Cadeau beste vriend',
   description:
     'Laat een persoonlijk vriendschapslied maken voor je beste vriend of vriendin. Het perfecte cadeau om jullie vriendschap te vieren. Emotioneel, grappig of gewoon omdat het kan.',
   keywords: [
@@ -35,7 +35,7 @@ export default function VriendschapLiedPage() {
     <PageLayout>
       <ServiceHero
         title="VRIENDSCHAPSLIED"
-        subtitle="Voor Je Beste Vriend of Vriendin"
+        subtitle="Voor je beste vriend of vriendin"
         description="Jullie delen inside jokes, avonturen en onvergetelijke momenten. Maak het compleet met een persoonlijk vriendschapslied."
         icon={<Users className="w-10 h-10 text-white" />}
       />
@@ -44,7 +44,7 @@ export default function VriendschapLiedPage() {
         <div className="container mx-auto max-w-4xl">
           <div className="mb-20">
             <h2 className="font-display font-black text-4xl md:text-5xl uppercase mb-8 text-white">
-              Waarom een Vriendschapslied?
+              Waarom een vriendschapslied?
             </h2>
             <div className="space-y-6 text-lg text-gray-300 leading-relaxed">
               <p>
@@ -61,7 +61,7 @@ export default function VriendschapLiedPage() {
 
           <div className="mb-20">
             <h2 className="font-display font-black text-4xl md:text-5xl uppercase mb-8 text-white">
-              Hoe Werkt Het?
+              Hoe werkt het?
             </h2>
             <div className="space-y-8">
               <div className="flex gap-6 items-start">
@@ -69,7 +69,7 @@ export default function VriendschapLiedPage() {
                   <span className="text-hot-pink font-bold text-xl">1</span>
                 </div>
                 <div>
-                  <h3 className="font-display font-bold text-2xl mb-2 text-white">Vertel Jullie Verhaal</h3>
+                  <h3 className="font-display font-bold text-2xl mb-2 text-white">Vertel jullie verhaal</h3>
                   <p className="text-gray-300">
                     Hoe hebben jullie elkaar ontmoet? Welke inside jokes zijn er? Wat zijn de meest memorabele momenten? Waar hebben jullie samen om gelachen of gehuild? Hoe meer ik weet, hoe persoonlijker het wordt.
                   </p>
@@ -81,7 +81,7 @@ export default function VriendschapLiedPage() {
                   <span className="text-electric-blue font-bold text-xl">2</span>
                 </div>
                 <div>
-                  <h3 className="font-display font-bold text-2xl mb-2 text-white">Kies de Vibe</h3>
+                  <h3 className="font-display font-bold text-2xl mb-2 text-white">Kies de vibe</h3>
                   <p className="text-gray-300">
                     Moet het lied grappig zijn? Emotioneel? Een uptempo party track? We stemmen de muziekstijl, toon en sfeer samen af zodat het perfect past bij jullie vriendschap.
                   </p>
@@ -93,7 +93,7 @@ export default function VriendschapLiedPage() {
                   <span className="text-cyan-bright font-bold text-xl">3</span>
                 </div>
                 <div>
-                  <h3 className="font-display font-bold text-2xl mb-2 text-white">Verras Je Vriend</h3>
+                  <h3 className="font-display font-bold text-2xl mb-2 text-white">Verras je vriend</h3>
                   <p className="text-gray-300">
                     Je ontvangt het lied in topkwaliteit. Draai het af tijdens een verjaardagsfeest, stuur het als verrassing, of deel het gewoon omdat je wilt laten zien hoeveel je om elkaar geeft.
                   </p>
@@ -104,7 +104,7 @@ export default function VriendschapLiedPage() {
 
           <div className="mb-20">
             <h2 className="font-display font-black text-4xl md:text-5xl uppercase mb-8 text-white">
-              Voor Welke Momenten?
+              Voor welke momenten?
             </h2>
             <div className="grid md:grid-cols-2 gap-6">
               <div className="p-6 rounded-2xl bg-secondary-black border-2 border-gray-800">
@@ -125,7 +125,7 @@ export default function VriendschapLiedPage() {
 
               <div className="p-6 rounded-2xl bg-secondary-black border-2 border-gray-800">
                 <Users className="w-8 h-8 text-vivid-yellow mb-4" />
-                <h3 className="font-display font-bold text-xl mb-2 text-white">Vriendschap Jubileum</h3>
+                <h3 className="font-display font-bold text-xl mb-2 text-white">Vriendschap jubileum</h3>
                 <p className="text-gray-300">
                   10 jaar vrienden? 20 jaar? Vier jullie jarenlange vriendschap met een lied dat jullie reis samen viert.
                 </p>
@@ -143,7 +143,7 @@ export default function VriendschapLiedPage() {
 
           <div className="mb-20">
             <h2 className="font-display font-black text-4xl md:text-5xl uppercase mb-8 text-white">
-              Bekijk Ook
+              Bekijk ook
             </h2>
             <div className="flex flex-wrap gap-4">
               {relatedServices.map((service) => (

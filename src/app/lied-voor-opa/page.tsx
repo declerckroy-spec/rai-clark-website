@@ -6,7 +6,7 @@ import { Heart, Clock } from 'lucide-react';
 import Link from 'next/link';
 
 export const metadata: Metadata = {
-  title: 'Lied voor Opa Laten Maken | Persoonlijk Cadeau voor Grootvader | Rai Clark',
+  title: 'Lied voor opa laten maken | Cadeau grootvader',
   description:
     'Laat een uniek lied voor opa maken. Het perfecte persoonlijke cadeau voor je grootvader. Emotioneel, dankbaar en warm - een lied dat blijft hangen.',
   keywords: [
@@ -34,7 +34,7 @@ export default function LiedVoorOpaPage() {
     <PageLayout>
       <ServiceHero
         title="LIED VOOR OPA"
-        subtitle="Voor Jouw Grootvader"
+        subtitle="Voor jouw grootvader"
         description="Je opa heeft zoveel mooie verhalen, wijze lessen en warme herinneringen. Tijd om dat te vieren met een persoonlijk lied."
         icon={<Heart className="w-10 h-10 text-white" />}
       />
@@ -43,7 +43,7 @@ export default function LiedVoorOpaPage() {
         <div className="container mx-auto max-w-4xl">
           <div className="mb-20">
             <h2 className="font-display font-black text-4xl md:text-5xl uppercase mb-8 text-white">
-              Waarom een Lied voor Opa?
+              Waarom een lied voor opa?
             </h2>
             <div className="space-y-6 text-lg text-gray-300 leading-relaxed">
               <p>
@@ -60,7 +60,7 @@ export default function LiedVoorOpaPage() {
 
           <div className="mb-20">
             <h2 className="font-display font-black text-4xl md:text-5xl uppercase mb-8 text-white">
-              Hoe Werkt Het?
+              Hoe werkt het?
             </h2>
             <div className="space-y-8">
               <div className="flex gap-6 items-start">
@@ -68,7 +68,7 @@ export default function LiedVoorOpaPage() {
                   <span className="text-electric-blue font-bold text-xl">1</span>
                 </div>
                 <div>
-                  <h3 className="font-display font-bold text-2xl mb-2 text-white">Vertel Over Je Opa</h3>
+                  <h3 className="font-display font-bold text-2xl mb-2 text-white">Vertel over je opa</h3>
                   <p className="text-gray-300">
                     Wat maakt je opa bijzonder? Welke herinneringen koester je? Heeft hij typische uitspraken of grappige gewoontes? Vertel me zijn verhaal, dan maak ik daar muziek van.
                   </p>
@@ -80,7 +80,7 @@ export default function LiedVoorOpaPage() {
                   <span className="text-cyan-bright font-bold text-xl">2</span>
                 </div>
                 <div>
-                  <h3 className="font-display font-bold text-2xl mb-2 text-white">Kies de Toon</h3>
+                  <h3 className="font-display font-bold text-2xl mb-2 text-white">Kies de toon</h3>
                   <p className="text-gray-300">
                     Moet het rustig en emotioneel zijn? Vrolijk en feestelijk? Een combinatie? We stemmen de muziekstijl af op wat bij je opa past.
                   </p>
@@ -92,7 +92,7 @@ export default function LiedVoorOpaPage() {
                   <span className="text-hot-pink font-bold text-xl">3</span>
                 </div>
                 <div>
-                  <h3 className="font-display font-bold text-2xl mb-2 text-white">Verras Je Opa</h3>
+                  <h3 className="font-display font-bold text-2xl mb-2 text-white">Verras je opa</h3>
                   <p className="text-gray-300">
                     Draai het lied af tijdens zijn verjaardag, jubileum, of gewoon tijdens een gezellig bezoek. Zie zijn ontroering wanneer hij beseft dat je dit speciaal voor hem hebt laten maken.
                   </p>
@@ -103,7 +103,7 @@ export default function LiedVoorOpaPage() {
 
           <div className="mb-20">
             <h2 className="font-display font-black text-4xl md:text-5xl uppercase mb-8 text-white">
-              Voor Welke Momenten?
+              Voor welke momenten?
             </h2>
             <div className="grid md:grid-cols-2 gap-6">
               <div className="p-6 rounded-2xl bg-secondary-black border-2 border-gray-800">
@@ -142,7 +142,7 @@ export default function LiedVoorOpaPage() {
 
           <div className="mb-20">
             <h2 className="font-display font-black text-4xl md:text-5xl uppercase mb-8 text-white">
-              Bekijk Ook
+              Bekijk ook
             </h2>
             <div className="flex flex-wrap gap-4">
               {relatedServices.map((service) => (

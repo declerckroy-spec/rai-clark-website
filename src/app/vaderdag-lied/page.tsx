@@ -6,7 +6,7 @@ import { Heart, Users } from 'lucide-react';
 import Link from 'next/link';
 
 export const metadata: Metadata = {
-  title: 'Vaderdaglied Laten Maken | Persoonlijk Cadeau voor Papa | Rai Clark',
+  title: 'Vaderdaglied laten maken | Persoonlijk cadeau papa',
   description:
     'Laat een uniek vaderdaglied maken voor je vader. Het perfecte persoonlijke cadeau voor Vaderdag. Emotioneel, grappig of dankbaar - een lied dat blijft hangen.',
   keywords: [
@@ -35,7 +35,7 @@ export default function VaderdagLiedPage() {
     <PageLayout>
       <ServiceHero
         title="VADERDAGLIED"
-        subtitle="Voor de Beste Vader"
+        subtitle="Voor de beste vader"
         description="Je vader heeft altijd voor jou klaargestaan. Tijd om te laten zien hoeveel hij betekent met een persoonlijk vaderdaglied."
         icon={<Heart className="w-10 h-10 text-white" />}
       />
@@ -44,7 +44,7 @@ export default function VaderdagLiedPage() {
         <div className="container mx-auto max-w-4xl">
           <div className="mb-20">
             <h2 className="font-display font-black text-4xl md:text-5xl uppercase mb-8 text-white">
-              Waarom een Vaderdaglied?
+              Waarom een vaderdaglied?
             </h2>
             <div className="space-y-6 text-lg text-gray-300 leading-relaxed">
               <p>
@@ -61,7 +61,7 @@ export default function VaderdagLiedPage() {
 
           <div className="mb-20">
             <h2 className="font-display font-black text-4xl md:text-5xl uppercase mb-8 text-white">
-              Hoe Werkt Het?
+              Hoe werkt het?
             </h2>
             <div className="space-y-8">
               <div className="flex gap-6 items-start">
@@ -69,7 +69,7 @@ export default function VaderdagLiedPage() {
                   <span className="text-electric-blue font-bold text-xl">1</span>
                 </div>
                 <div>
-                  <h3 className="font-display font-bold text-2xl mb-2 text-white">Vertel Over Je Vader</h3>
+                  <h3 className="font-display font-bold text-2xl mb-2 text-white">Vertel over je vader</h3>
                   <p className="text-gray-300">
                     Wat maakt je vader bijzonder? Welke herinneringen zijn onvergetelijk? Heeft hij grappige gewoontes of typische uitspraken? Wat zou je hem willen zeggen in een lied?
                   </p>
@@ -81,7 +81,7 @@ export default function VaderdagLiedPage() {
                   <span className="text-hot-pink font-bold text-xl">2</span>
                 </div>
                 <div>
-                  <h3 className="font-display font-bold text-2xl mb-2 text-white">Kies de Toon</h3>
+                  <h3 className="font-display font-bold text-2xl mb-2 text-white">Kies de toon</h3>
                   <p className="text-gray-300">
                     Moet het emotioneel en dankbaar zijn? Grappig en luchtig? Een combinatie? We stemmen de stijl af op wat bij jullie relatie past.
                   </p>
@@ -93,7 +93,7 @@ export default function VaderdagLiedPage() {
                   <span className="text-cyan-bright font-bold text-xl">3</span>
                 </div>
                 <div>
-                  <h3 className="font-display font-bold text-2xl mb-2 text-white">Verras Je Vader</h3>
+                  <h3 className="font-display font-bold text-2xl mb-2 text-white">Verras je vader</h3>
                   <p className="text-gray-300">
                     Geef het lied cadeau op Vaderdag, zijn verjaardag, of zomaar. Zie zijn gezicht wanneer hij beseft dat je een heel lied speciaal voor hem hebt laten maken.
                   </p>
@@ -104,7 +104,7 @@ export default function VaderdagLiedPage() {
 
           <div className="mb-20">
             <h2 className="font-display font-black text-4xl md:text-5xl uppercase mb-8 text-white">
-              Voor Welke Momenten?
+              Voor welke momenten?
             </h2>
             <div className="grid md:grid-cols-2 gap-6">
               <div className="p-6 rounded-2xl bg-secondary-black border-2 border-gray-800">
@@ -143,7 +143,7 @@ export default function VaderdagLiedPage() {
 
           <div className="mb-20">
             <h2 className="font-display font-black text-4xl md:text-5xl uppercase mb-8 text-white">
-              Bekijk Ook
+              Bekijk ook
             </h2>
             <div className="flex flex-wrap gap-4">
               {relatedServices.map((service) => (

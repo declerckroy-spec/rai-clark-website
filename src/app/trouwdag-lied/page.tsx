@@ -6,7 +6,7 @@ import { Heart, Music, Sparkles } from 'lucide-react';
 import Link from 'next/link';
 
 export const metadata: Metadata = {
-  title: 'Trouwdaglied Laten Maken | Unieke Bruiloftsmuziek | Rai Clark',
+  title: 'Trouwdaglied laten maken | Unieke bruiloftsmuziek',
   description:
     'Laat een persoonlijk trouwdaglied maken voor jullie grote dag. Van first dance song tot ceremoniemuziek. Romantische, professionele bruiloftsmuziek die jullie verhaal vertelt.',
   keywords: [
@@ -36,7 +36,7 @@ export default function TrouwdagLiedPage() {
     <PageLayout>
       <ServiceHero
         title="TROUWDAGLIED"
-        subtitle="Muziek voor Jullie Grote Dag"
+        subtitle="Muziek voor jullie grote dag"
         description="Jullie liefdesverhaal verdient een eigen soundtrack. Een persoonlijk trouwdaglied dat jullie reis samen viert en voor altijd blijft hangen."
         icon={<Heart className="w-10 h-10 text-white" />}
       />
@@ -45,7 +45,7 @@ export default function TrouwdagLiedPage() {
         <div className="container mx-auto max-w-4xl">
           <div className="mb-20">
             <h2 className="font-display font-black text-4xl md:text-5xl uppercase mb-8 text-white">
-              Waarom een Trouwdaglied?
+              Waarom een trouwdaglied?
             </h2>
             <div className="space-y-6 text-lg text-gray-300 leading-relaxed">
               <p>
@@ -62,7 +62,7 @@ export default function TrouwdagLiedPage() {
 
           <div className="mb-20">
             <h2 className="font-display font-black text-4xl md:text-5xl uppercase mb-8 text-white">
-              Hoe Werkt Het?
+              Hoe werkt het?
             </h2>
             <div className="space-y-8">
               <div className="flex gap-6 items-start">
@@ -70,7 +70,7 @@ export default function TrouwdagLiedPage() {
                   <span className="text-hot-pink font-bold text-xl">1</span>
                 </div>
                 <div>
-                  <h3 className="font-display font-bold text-2xl mb-2 text-white">Vertel Jullie Verhaal</h3>
+                  <h3 className="font-display font-bold text-2xl mb-2 text-white">Vertel jullie verhaal</h3>
                   <p className="text-gray-300">
                     Hoe hebben jullie elkaar ontmoet? Wat maakt jullie relatie bijzonder? Welke inside jokes, mooie momenten of grappige anekdotes willen jullie in het lied? Hoe meer ik weet, hoe persoonlijker het wordt.
                   </p>
@@ -82,7 +82,7 @@ export default function TrouwdagLiedPage() {
                   <span className="text-electric-blue font-bold text-xl">2</span>
                 </div>
                 <div>
-                  <h3 className="font-display font-bold text-2xl mb-2 text-white">Kies Stijl & Sfeer</h3>
+                  <h3 className="font-display font-bold text-2xl mb-2 text-white">Kies stijl en sfeer</h3>
                   <p className="text-gray-300">
                     Romantische singer-songwriter? Uptempo pop? Jazzy crooner stijl? Akoestische gitaar? We stemmen de muziekstijl af op jullie smaak en het moment waarop het gespeeld wordt.
                   </p>
@@ -94,7 +94,7 @@ export default function TrouwdagLiedPage() {
                   <span className="text-cyan-bright font-bold text-xl">3</span>
                 </div>
                 <div>
-                  <h3 className="font-display font-bold text-2xl mb-2 text-white">Ontvang & Verras</h3>
+                  <h3 className="font-display font-bold text-2xl mb-2 text-white">Ontvang en verras</h3>
                   <p className="text-gray-300">
                     Je krijgt eerst een demo om feedback op te geven. Na goedkeuring ontvang je de finale versie in topkwaliteit, klaar om af te spelen op jullie bruiloft of te delen met gasten.
                   </p>
@@ -105,7 +105,7 @@ export default function TrouwdagLiedPage() {
 
           <div className="mb-20">
             <h2 className="font-display font-black text-4xl md:text-5xl uppercase mb-8 text-white">
-              Voor Welke Momenten?
+              Voor welke momenten?
             </h2>
             <div className="grid md:grid-cols-2 gap-6">
               <div className="p-6 rounded-2xl bg-secondary-black border-2 border-gray-800">
@@ -134,7 +134,7 @@ export default function TrouwdagLiedPage() {
 
               <div className="p-6 rounded-2xl bg-secondary-black border-2 border-gray-800">
                 <Music className="w-8 h-8 text-vivid-yellow mb-4" />
-                <h3 className="font-display font-bold text-xl mb-2 text-white">Cadeau voor Partner</h3>
+                <h3 className="font-display font-bold text-xl mb-2 text-white">Cadeau voor partner</h3>
                 <p className="text-gray-300">
                   Verras je partner met een zelfgeschreven lied als ultiem huwelijkscadeau.
                 </p>
@@ -144,7 +144,7 @@ export default function TrouwdagLiedPage() {
 
           <div className="mb-20">
             <h2 className="font-display font-black text-4xl md:text-5xl uppercase mb-8 text-white">
-              Andere Gelegenheden
+              Andere gelegenheden
             </h2>
             <div className="flex flex-wrap gap-4">
               {relatedServices.map((service) => (

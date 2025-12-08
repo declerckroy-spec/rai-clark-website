@@ -6,7 +6,7 @@ import { Sparkles, Heart, Music, Users } from 'lucide-react';
 import Link from 'next/link';
 
 export const metadata: Metadata = {
-  title: 'Suikerfeestlied Laten Maken | Eid Mubarak Lied | Rai Clark',
+  title: 'Suikerfeestlied laten maken: Eid Mubarak muziek',
   description:
     'Laat een persoonlijk suikerfeestlied maken voor familie en vrienden. Vier Eid al-Fitr met een liedje dat de vreugde en dankbaarheid vastlegt. Warm, feestelijk en oprecht.',
   keywords: [
@@ -37,7 +37,7 @@ export default function SuikerfeestLiedPage() {
     <PageLayout>
       <ServiceHero
         title="SUIKERFEESTLIED"
-        subtitle="Eid Mubarak in Muziek"
+        subtitle="Eid Mubarak in muziek"
         description="Het Suikerfeest is een moment van vreugde, dankbaarheid en samenzijn. Vier het met een persoonlijk lied dat de bijzondere band met familie en vrienden vastlegt. Eid Mubarak!"
         icon={<Sparkles className="w-10 h-10 text-white" />}
       />
@@ -46,7 +46,7 @@ export default function SuikerfeestLiedPage() {
         <div className="container mx-auto max-w-4xl">
           <div className="mb-20">
             <h2 className="font-display font-black text-4xl md:text-5xl uppercase mb-8 text-white">
-              Waarom een Suikerfeestlied?
+              Waarom een suikerfeestlied?
             </h2>
             <div className="space-y-6 text-lg text-gray-300 leading-relaxed">
               <p>
@@ -63,7 +63,7 @@ export default function SuikerfeestLiedPage() {
 
           <div className="mb-20">
             <h2 className="font-display font-black text-4xl md:text-5xl uppercase mb-8 text-white">
-              Hoe Werkt Het?
+              Hoe werkt het?
             </h2>
             <div className="space-y-8">
               <div className="flex gap-6 items-start">
@@ -71,7 +71,7 @@ export default function SuikerfeestLiedPage() {
                   <span className="text-electric-blue font-bold text-xl">1</span>
                 </div>
                 <div>
-                  <h3 className="font-display font-bold text-2xl mb-2 text-white">Deel Jullie Verhaal</h3>
+                  <h3 className="font-display font-bold text-2xl mb-2 text-white">Deel jullie verhaal</h3>
                   <p className="text-gray-300">
                     Wat maakt het Suikerfeest bij jullie speciaal? Welke tradities hebben jullie? Wat betekent de familie voor jullie? Hoe vieren jullie samen? Dit alles kan verwerkt worden.
                   </p>
@@ -83,7 +83,7 @@ export default function SuikerfeestLiedPage() {
                   <span className="text-hot-pink font-bold text-xl">2</span>
                 </div>
                 <div>
-                  <h3 className="font-display font-bold text-2xl mb-2 text-white">Kies de Sfeer</h3>
+                  <h3 className="font-display font-bold text-2xl mb-2 text-white">Kies de sfeer</h3>
                   <p className="text-gray-300">
                     Warm en emotioneel? Vrolijk en feestelijk? Traditioneel of modern? We maken een lied dat past bij jullie viering en de gevoelens van dankbaarheid en vreugde.
                   </p>
@@ -95,7 +95,7 @@ export default function SuikerfeestLiedPage() {
                   <span className="text-cyan-bright font-bold text-xl">3</span>
                 </div>
                 <div>
-                  <h3 className="font-display font-bold text-2xl mb-2 text-white">Vier Samen met Muziek</h3>
+                  <h3 className="font-display font-bold text-2xl mb-2 text-white">Vier samen met muziek</h3>
                   <p className="text-gray-300">
                     Draai het lied af tijdens de samenkomst en deel de vreugde. Je krijgt een hoogwaardige audiofile om te bewaren en elk jaar opnieuw te beluisteren.
                   </p>
@@ -106,7 +106,7 @@ export default function SuikerfeestLiedPage() {
 
           <div className="mb-20">
             <h2 className="font-display font-black text-4xl md:text-5xl uppercase mb-8 text-white">
-              Voor Welke Momenten?
+              Voor welke momenten?
             </h2>
             <div className="grid md:grid-cols-2 gap-6">
               <div className="p-6 rounded-2xl bg-secondary-black border-2 border-gray-800">
@@ -119,7 +119,7 @@ export default function SuikerfeestLiedPage() {
 
               <div className="p-6 rounded-2xl bg-secondary-black border-2 border-gray-800">
                 <Sparkles className="w-8 h-8 text-cyan-bright mb-4" />
-                <h3 className="font-display font-bold text-xl mb-2 text-white">Cadeau voor Dierbaren</h3>
+                <h3 className="font-display font-bold text-xl mb-2 text-white">Cadeau voor dierbaren</h3>
                 <p className="text-gray-300">
                   Een persoonlijk lied als cadeau voor ouders, familie of vrienden. Een uiting van dankbaarheid en liefde.
                 </p>
@@ -135,7 +135,7 @@ export default function SuikerfeestLiedPage() {
 
               <div className="p-6 rounded-2xl bg-secondary-black border-2 border-gray-800">
                 <Music className="w-8 h-8 text-vivid-yellow mb-4" />
-                <h3 className="font-display font-bold text-xl mb-2 text-white">Jaarlijkse Traditie</h3>
+                <h3 className="font-display font-bold text-xl mb-2 text-white">Jaarlijkse traditie</h3>
                 <p className="text-gray-300">
                   Een lied dat elk Suikerfeest terugkomt. Een muzikale traditie die de jaren verbindt en betekenis krijgt.
                 </p>
@@ -145,7 +145,7 @@ export default function SuikerfeestLiedPage() {
 
           <div className="mb-20">
             <h2 className="font-display font-black text-4xl md:text-5xl uppercase mb-8 text-white">
-              Bekijk Ook
+              Bekijk ook
             </h2>
             <div className="flex flex-wrap gap-4">
               {relatedServices.map((service) => (

@@ -6,7 +6,7 @@ import { Briefcase, Music, Users, Heart } from 'lucide-react';
 import Link from 'next/link';
 
 export const metadata: Metadata = {
-  title: 'Afscheidslied Collega Laten Maken | Persoonlijk Afscheidscadeau | Rai Clark',
+  title: 'Afscheidslied collega laten maken | Afscheidscadeau',
   description:
     'Laat een persoonlijk afscheidslied maken voor een vertrekkende collega. Het perfecte afscheidscadeau dat blijft hangen. Grappig, emotioneel of feestelijk - jij bepaalt de toon.',
   keywords: [
@@ -36,7 +36,7 @@ export default function AfscheidCollegaLiedPage() {
     <PageLayout>
       <ServiceHero
         title="AFSCHEID COLLEGA"
-        subtitle="Een Afscheid om Nooit te Vergeten"
+        subtitle="Een afscheid om nooit te vergeten"
         description="Een collega vertrekt. Geef geen standaard kaart, maar een persoonlijk afscheidslied vol inside jokes, mooie herinneringen en de eigenschappen waar iedereen hem of haar om kent."
         icon={<Briefcase className="w-10 h-10 text-white" />}
       />
@@ -45,7 +45,7 @@ export default function AfscheidCollegaLiedPage() {
         <div className="container mx-auto max-w-4xl">
           <div className="mb-20">
             <h2 className="font-display font-black text-4xl md:text-5xl uppercase mb-8 text-white">
-              Waarom een Afscheidslied?
+              Waarom een afscheidslied?
             </h2>
             <div className="space-y-6 text-lg text-gray-300 leading-relaxed">
               <p>

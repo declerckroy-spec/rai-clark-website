@@ -28,7 +28,7 @@ export default function OverMijPage() {
     <PageLayout>
       <ServiceHero
         title="OVER MIJ"
-        subtitle="Hoe Het Werkt"
+        subtitle="Hoe het werkt"
         description="Van idee tot eindresultaat. Transparant, persoonlijk en professioneel. Dit is hoe ik jouw verhaal omzet in muziek."
         icon={<Music className="w-10 h-10 text-white" />}
       />
@@ -40,7 +40,7 @@ export default function OverMijPage() {
             <div className="grid md:grid-cols-2 gap-12 items-center">
               <div>
                 <h2 className="font-display font-black text-4xl md:text-5xl uppercase mb-6 text-white">
-                  Wie Ben Ik?
+                  Wie ben ik?
                 </h2>
                 <div className="space-y-4 text-lg text-gray-300 leading-relaxed">
                   <p>
@@ -72,7 +72,7 @@ export default function OverMijPage() {
           {/* How It Works - Detailed */}
           <div className="mb-24">
             <h2 className="font-display font-black text-4xl md:text-5xl uppercase mb-12 text-center text-white">
-              Zo Werkt Het Proces
+              Zo werkt het proces
             </h2>
             <div className="space-y-12">
               <div className="flex gap-6 items-start">
@@ -80,7 +80,7 @@ export default function OverMijPage() {
                   <Lightbulb className="w-8 h-8 text-electric-blue" />
                 </div>
                 <div className="flex-1">
-                  <h3 className="font-display font-bold text-2xl mb-3 text-white">1. Intake & Brainstorm</h3>
+                  <h3 className="font-display font-bold text-2xl mb-3 text-white">1. Intake en brainstorm</h3>
                   <p className="text-gray-300 text-lg leading-relaxed mb-4">
                     Je vult het contactformulier in of stuurt me een e-mail. Vertel me alles: over wie gaat het lied? Wat maakt deze persoon of dit moment bijzonder? Welke inside jokes, anekdotes of emoties wil je vastleggen?
                   </p>
@@ -95,7 +95,7 @@ export default function OverMijPage() {
                   <Mic className="w-8 h-8 text-hot-pink" />
                 </div>
                 <div className="flex-1">
-                  <h3 className="font-display font-bold text-2xl mb-3 text-white">2. Schrijven & Produceren</h3>
+                  <h3 className="font-display font-bold text-2xl mb-3 text-white">2. Schrijven en produceren</h3>
                   <p className="text-gray-300 text-lg leading-relaxed mb-4">
                     Ik ga aan de slag met de tekst. Dit is het belangrijkste onderdeel: een goed persoonlijk lied zit vol details, herkenbare momenten en echte emotie. Geen generieke platitudes, maar verhalen die kloppen.
                   </p>
@@ -110,7 +110,7 @@ export default function OverMijPage() {
                   <Music className="w-8 h-8 text-cyan-bright" />
                 </div>
                 <div className="flex-1">
-                  <h3 className="font-display font-bold text-2xl mb-3 text-white">3. Demo & Feedback</h3>
+                  <h3 className="font-display font-bold text-2xl mb-3 text-white">3. Demo en feedback</h3>
                   <p className="text-gray-300 text-lg leading-relaxed mb-4">
                     Je ontvangt een demo van het lied. Luister, laat het op je inwerken, en geef feedback. Wil je aanpassingen in de tekst? Moet de muziek anders? Dit is het moment om alles te finetunen.
                   </p>
@@ -125,7 +125,7 @@ export default function OverMijPage() {
                   <CheckCircle className="w-8 h-8 text-vivid-yellow" />
                 </div>
                 <div className="flex-1">
-                  <h3 className="font-display font-bold text-2xl mb-3 text-white">4. Finale Versie & Levering</h3>
+                  <h3 className="font-display font-bold text-2xl mb-3 text-white">4. Finale versie en levering</h3>
                   <p className="text-gray-300 text-lg leading-relaxed mb-4">
                     Zodra je akkoord geeft, maak ik de finale versie. Je ontvangt een hoogwaardige audiofile (MP3 of WAV) die je kunt afspelen, delen, op USB zetten, of zelfs op vinyl laten persen.
                   </p>
@@ -140,7 +140,7 @@ export default function OverMijPage() {
           {/* AI & Technology */}
           <div className="mb-24">
             <h2 className="font-display font-black text-4xl md:text-5xl uppercase mb-8 text-center text-white">
-              Over AI & Technologie
+              Over AI en technologie
             </h2>
             <div className="max-w-3xl mx-auto space-y-6 text-lg text-gray-300 leading-relaxed">
               <p>
@@ -163,7 +163,7 @@ export default function OverMijPage() {
             <div className="grid md:grid-cols-2 gap-6">
               <div className="p-6 rounded-2xl bg-secondary-black border-2 border-gray-800">
                 <h3 className="font-display font-bold text-xl uppercase mb-3 text-electric-blue">
-                  Persoonlijk & Transparant
+                  Persoonlijk en transparant
                 </h3>
                 <p className="text-gray-300">
                   Geen corporate gedoe, geen standaard processen. Gewoon een direct contact, eerlijke communicatie en muziek die klopt.
@@ -172,7 +172,7 @@ export default function OverMijPage() {
 
               <div className="p-6 rounded-2xl bg-secondary-black border-2 border-gray-800">
                 <h3 className="font-display font-bold text-xl uppercase mb-3 text-hot-pink">
-                  Snelle Levering
+                  Snelle levering
                 </h3>
                 <p className="text-gray-300">
                   Dankzij AI-productie kan ik razendsnel werken. Binnen een week klaar, en als het moet dezelfde dag nog.
@@ -181,7 +181,7 @@ export default function OverMijPage() {
 
               <div className="p-6 rounded-2xl bg-secondary-black border-2 border-gray-800">
                 <h3 className="font-display font-bold text-xl uppercase mb-3 text-cyan-bright">
-                  Eerlijke Prijzen
+                  Eerlijke prijzen
                 </h3>
                 <p className="text-gray-300">
                   Geen verborgen kosten, geen onverwachte meerwerk. We stemmen de prijs vooraf af op basis van wat je wilt.
@@ -190,7 +190,7 @@ export default function OverMijPage() {
 
               <div className="p-6 rounded-2xl bg-secondary-black border-2 border-gray-800">
                 <h3 className="font-display font-bold text-xl uppercase mb-3 text-vivid-yellow">
-                  Passie voor Muziek
+                  Passie voor muziek
                 </h3>
                 <p className="text-gray-300">
                   Dit is niet alleen een bijverdienste. Ik leef voor muziek. Check Het Beestenbal als je me niet gelooft. Mijn oma is mijn grootste fan.
@@ -202,7 +202,7 @@ export default function OverMijPage() {
           {/* CTA */}
           <div className="max-w-3xl mx-auto text-center">
             <h2 className="font-display font-black text-4xl md:text-5xl uppercase mb-6 text-white">
-              Klaar om te Beginnen?
+              Klaar om te beginnen?
             </h2>
             <p className="text-lg text-gray-300 mb-8">
               Kies een gelegenheid of neem direct contact op. Ik help je graag verder.
@@ -210,12 +210,12 @@ export default function OverMijPage() {
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Link href="/lied-op-maat">
                 <button className="px-8 py-4 border-2 border-cyan-bright text-cyan-bright font-bold uppercase tracking-wider rounded-lg hover:bg-cyan-bright hover:text-black smooth-transition">
-                  Bekijk Alle Diensten
+                  Bekijk alle diensten
                 </button>
               </Link>
               <a href="/#contact">
                 <button className="px-8 py-4 bg-gradient-to-r from-hot-pink to-magenta text-white font-bold uppercase tracking-wider rounded-lg smooth-transition hover:shadow-neon-pink">
-                  Neem Contact Op
+                  Neem contact op
                 </button>
               </a>
             </div>

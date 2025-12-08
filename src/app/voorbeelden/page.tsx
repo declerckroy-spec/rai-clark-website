@@ -5,7 +5,7 @@ import { Music, Play, Headphones } from 'lucide-react';
 import Link from 'next/link';
 
 export const metadata: Metadata = {
-  title: 'Voorbeelden van Persoonlijke Liedjes | Portfolio | Rai Clark',
+  title: 'Voorbeelden: luister naar persoonlijke liedjes',
   description:
     'Luister naar voorbeelden van gemaakte persoonlijke liedjes. Van verjaardagsliederen tot bruiloftsmuziek, van emotioneel tot grappig. Hoor wat mogelijk is.',
   keywords: [
@@ -54,7 +54,7 @@ export default function VoorbeeldenPage() {
     <PageLayout>
       <ServiceHero
         title="VOORBEELDEN"
-        subtitle="Luister & Ervaar"
+        subtitle="Luister en ervaar"
         description="Van gekke experimentele nummers tot emotionele persoonlijke liedjes. Hoor wat ik maak en wat mogelijk is."
         icon={<Music className="w-10 h-10 text-white" />}
       />
@@ -64,7 +64,7 @@ export default function VoorbeeldenPage() {
           {/* Intro */}
           <div className="max-w-3xl mx-auto text-center mb-16">
             <h2 className="font-display font-black text-4xl md:text-5xl uppercase mb-6 text-white">
-              Mijn Muziek
+              Mijn muziek
             </h2>
             <p className="text-lg text-gray-300 leading-relaxed">
               Luister op Spotify naar Het Beestenbal voor een beeld van mijn muziekstijl. Voor persoonlijke liedjes op maat zijn ook demo's beschikbaar op aanvraag.
@@ -76,7 +76,7 @@ export default function VoorbeeldenPage() {
             <div className="max-w-3xl mx-auto">
               <div className="mb-6">
                 <h3 className="font-display font-bold text-3xl uppercase mb-2 text-white">
-                  Het Beestenbal
+                  Het beestenbal
                 </h3>
                 <p className="text-gray-400">
                   Mijn debuutalbum. Absurde kinderliedjes over dieren. Een voorbeeld van wat ik kan maken met AI-productie.
@@ -101,7 +101,7 @@ export default function VoorbeeldenPage() {
           {/* Examples Grid */}
           <div className="mb-20">
             <h2 className="font-display font-black text-4xl md:text-5xl uppercase mb-12 text-center text-white">
-              Wat Ik Kan Maken
+              Wat ik kan maken
             </h2>
             <div className="grid md:grid-cols-2 gap-8">
               {examples.map((example, index) => (
@@ -175,7 +175,7 @@ export default function VoorbeeldenPage() {
           {/* CTA */}
           <div className="max-w-3xl mx-auto text-center">
             <h2 className="font-display font-black text-4xl md:text-5xl uppercase mb-6 text-white">
-              Klaar om te Beginnen?
+              Klaar om te beginnen?
             </h2>
             <p className="text-lg text-gray-300 mb-8">
               Kies een gelegenheid of neem direct contact op om jouw idee te bespreken.
@@ -183,12 +183,12 @@ export default function VoorbeeldenPage() {
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Link href="/lied-op-maat">
                 <button className="px-8 py-4 border-2 border-cyan-bright text-cyan-bright font-bold uppercase tracking-wider rounded-lg hover:bg-cyan-bright hover:text-black smooth-transition">
-                  Bekijk Alle Diensten
+                  Bekijk alle diensten
                 </button>
               </Link>
               <a href="#contact">
                 <button className="px-8 py-4 bg-gradient-to-r from-hot-pink to-magenta text-white font-bold uppercase tracking-wider rounded-lg smooth-transition hover:shadow-neon-pink">
-                  Neem Contact Op
+                  Neem contact op
                 </button>
               </a>
             </div>

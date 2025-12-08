@@ -6,7 +6,7 @@ import { Heart, Flower2 } from 'lucide-react';
 import Link from 'next/link';
 
 export const metadata: Metadata = {
-  title: 'Lied voor Oma Laten Maken | Persoonlijk Cadeau voor Grootmoeder | Rai Clark',
+  title: 'Lied voor oma laten maken | Cadeau grootmoeder',
   description:
     'Laat een uniek lied voor oma maken. Het perfecte persoonlijke cadeau voor je grootmoeder. Emotioneel, liefdevol en warm - een lied dat blijft hangen.',
   keywords: [
@@ -34,7 +34,7 @@ export default function LiedVoorOmaPage() {
     <PageLayout>
       <ServiceHero
         title="LIED VOOR OMA"
-        subtitle="Voor Jouw Grootmoeder"
+        subtitle="Voor jouw grootmoeder"
         description="Je oma heeft zoveel liefde, warmte en wijsheid gegeven. Tijd om dat te vieren met een persoonlijk lied speciaal voor haar."
         icon={<Flower2 className="w-10 h-10 text-white" />}
       />
@@ -43,7 +43,7 @@ export default function LiedVoorOmaPage() {
         <div className="container mx-auto max-w-4xl">
           <div className="mb-20">
             <h2 className="font-display font-black text-4xl md:text-5xl uppercase mb-8 text-white">
-              Waarom een Lied voor Oma?
+              Waarom een lied voor oma?
             </h2>
             <div className="space-y-6 text-lg text-gray-300 leading-relaxed">
               <p>
@@ -60,7 +60,7 @@ export default function LiedVoorOmaPage() {
 
           <div className="mb-20">
             <h2 className="font-display font-black text-4xl md:text-5xl uppercase mb-8 text-white">
-              Hoe Werkt Het?
+              Hoe werkt het?
             </h2>
             <div className="space-y-8">
               <div className="flex gap-6 items-start">
@@ -68,7 +68,7 @@ export default function LiedVoorOmaPage() {
                   <span className="text-hot-pink font-bold text-xl">1</span>
                 </div>
                 <div>
-                  <h3 className="font-display font-bold text-2xl mb-2 text-white">Vertel Over Je Oma</h3>
+                  <h3 className="font-display font-bold text-2xl mb-2 text-white">Vertel over je oma</h3>
                   <p className="text-gray-300">
                     Wat maakt je oma bijzonder? Welke herinneringen koester je? Heeft ze typische gewoontes, uitspraken of recepten? Hoe meer details, hoe persoonlijker het lied.
                   </p>
@@ -80,7 +80,7 @@ export default function LiedVoorOmaPage() {
                   <span className="text-cyan-bright font-bold text-xl">2</span>
                 </div>
                 <div>
-                  <h3 className="font-display font-bold text-2xl mb-2 text-white">Kies de Sfeer</h3>
+                  <h3 className="font-display font-bold text-2xl mb-2 text-white">Kies de sfeer</h3>
                   <p className="text-gray-300">
                     Moet het rustig en emotioneel zijn? Vrolijk en warm? Een combinatie? We stemmen de muziekstijl af op wat bij je oma past.
                   </p>
@@ -92,7 +92,7 @@ export default function LiedVoorOmaPage() {
                   <span className="text-electric-blue font-bold text-xl">3</span>
                 </div>
                 <div>
-                  <h3 className="font-display font-bold text-2xl mb-2 text-white">Verras Je Oma</h3>
+                  <h3 className="font-display font-bold text-2xl mb-2 text-white">Verras je oma</h3>
                   <p className="text-gray-300">
                     Draai het lied af tijdens haar verjaardag, bij de koffie, of tijdens een familiebijeenkomst. Zie haar ontroering wanneer ze beseft dat je dit speciaal voor haar hebt laten maken.
                   </p>
@@ -103,7 +103,7 @@ export default function LiedVoorOmaPage() {
 
           <div className="mb-20">
             <h2 className="font-display font-black text-4xl md:text-5xl uppercase mb-8 text-white">
-              Voor Welke Momenten?
+              Voor welke momenten?
             </h2>
             <div className="grid md:grid-cols-2 gap-6">
               <div className="p-6 rounded-2xl bg-secondary-black border-2 border-gray-800">
@@ -142,7 +142,7 @@ export default function LiedVoorOmaPage() {
 
           <div className="mb-20">
             <h2 className="font-display font-black text-4xl md:text-5xl uppercase mb-8 text-white">
-              Bekijk Ook
+              Bekijk ook
             </h2>
             <div className="flex flex-wrap gap-4">
               {relatedServices.map((service) => (

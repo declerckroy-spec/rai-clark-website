@@ -6,7 +6,7 @@ import { Baby, Heart, Music, Sparkles } from 'lucide-react';
 import Link from 'next/link';
 
 export const metadata: Metadata = {
-  title: 'Geboortелied Laten Maken | Welkomstlied voor Baby | Rai Clark',
+  title: 'Geboortелied laten maken | Welkomstlied baby',
   description:
     'Laat een persoonlijk geboortелied maken voor je pasgeboren baby. Een liedje dat de geboorte viert en een blijvende herinnering is. Het perfecte cadeau voor jonge ouders.',
   keywords: [
@@ -37,7 +37,7 @@ export default function GeboorteKindLiedPage() {
     <PageLayout>
       <ServiceHero
         title="GEBOORTЕЛIED"
-        subtitle="Welkom in de Wereld"
+        subtitle="Welkom in de wereld"
         description="Een nieuwe baby is het mooiste wat er is. Vier de geboorte met een persoonlijk lied dat de vreugde vastlegt en een blijvende herinnering is voor later."
         icon={<Baby className="w-10 h-10 text-white" />}
       />
@@ -46,7 +46,7 @@ export default function GeboorteKindLiedPage() {
         <div className="container mx-auto max-w-4xl">
           <div className="mb-20">
             <h2 className="font-display font-black text-4xl md:text-5xl uppercase mb-8 text-white">
-              Waarom een Geboortелied?
+              Waarom een geboortелied?
             </h2>
             <div className="space-y-6 text-lg text-gray-300 leading-relaxed">
               <p>

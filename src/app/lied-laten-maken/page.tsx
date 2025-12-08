@@ -6,7 +6,7 @@ import { Music2, Heart, Sparkles } from 'lucide-react';
 import Link from 'next/link';
 
 export const metadata: Metadata = {
-  title: 'Lied Laten Maken | Persoonlijk Liedje op Maat | Rai Clark',
+  title: 'Lied laten maken | Persoonlijk liedje op maat',
   description:
     'Laat een uniek persoonlijk liedje maken voor elke gelegenheid. Verjaardag, bruiloft, jubileum of gewoon omdat het kan. Professionele muziekproductie met AI, snelle levering en eerlijke prijzen.',
   keywords: [
@@ -39,7 +39,7 @@ export default function LiedLatenMakenPage() {
     <PageLayout>
       <ServiceHero
         title="LIED LATEN MAKEN"
-        subtitle="Persoonlijke Muziek op Maat"
+        subtitle="Persoonlijke muziek op maat"
         description="Een uniek liedje speciaal voor jou. Voor elke gelegenheid, elke emotie, elke persoon. Van verjaardag tot bruiloft, van jubileum tot afscheid. Professioneel, persoonlijk en verrassend."
         icon={<Music2 className="w-10 h-10 text-white" />}
       />
@@ -50,7 +50,7 @@ export default function LiedLatenMakenPage() {
           {/* Why Section */}
           <div className="mb-20">
             <h2 className="font-display font-black text-4xl md:text-5xl uppercase mb-8 text-white">
-              Waarom een Persoonlijk Lied?
+              Waarom een persoonlijk lied?
             </h2>
             <div className="space-y-6 text-lg text-gray-300 leading-relaxed">
               <p>
@@ -68,7 +68,7 @@ export default function LiedLatenMakenPage() {
           {/* How It Works */}
           <div className="mb-20">
             <h2 className="font-display font-black text-4xl md:text-5xl uppercase mb-8 text-white">
-              Hoe Werkt Het?
+              Hoe werkt het?
             </h2>
             <div className="space-y-8">
               <div className="flex gap-6 items-start">
@@ -76,7 +76,7 @@ export default function LiedLatenMakenPage() {
                   <span className="text-electric-blue font-bold text-xl">1</span>
                 </div>
                 <div>
-                  <h3 className="font-display font-bold text-2xl mb-2 text-white">Vertel Je Verhaal</h3>
+                  <h3 className="font-display font-bold text-2xl mb-2 text-white">Vertel je verhaal</h3>
                   <p className="text-gray-300">
                     Vul het contactformulier in en vertel me over wie het lied gaat. Wat maakt deze persoon bijzonder? Welke anekdotes, inside jokes of mooie momenten wil je erin verwerken? Hoe meer details, hoe persoonlijker het wordt.
                   </p>
@@ -88,7 +88,7 @@ export default function LiedLatenMakenPage() {
                   <span className="text-hot-pink font-bold text-xl">2</span>
                 </div>
                 <div>
-                  <h3 className="font-display font-bold text-2xl mb-2 text-white">Kies Je Stijl</h3>
+                  <h3 className="font-display font-bold text-2xl mb-2 text-white">Kies je stijl</h3>
                   <p className="text-gray-300">
                     Wil je een uptempo feestnummer? Een emotionele ballade? Een grappig kinderliedje? Een epische rock anthem? We stemmen samen de muziekstijl, sfeer en toon af op wat jij voor ogen hebt.
                   </p>
@@ -100,7 +100,7 @@ export default function LiedLatenMakenPage() {
                   <span className="text-cyan-bright font-bold text-xl">3</span>
                 </div>
                 <div>
-                  <h3 className="font-display font-bold text-2xl mb-2 text-white">Productie & Levering</h3>
+                  <h3 className="font-display font-bold text-2xl mb-2 text-white">Productie en levering</h3>
                   <p className="text-gray-300">
                     Ik schrijf de tekst, componeer de muziek en produceer het hele nummer. Je ontvangt eerst een demo om feedback te geven. Na eventuele aanpassingen krijg je de finale versie als hoogwaardige audiofile.
                   </p>
@@ -112,30 +112,30 @@ export default function LiedLatenMakenPage() {
           {/* Examples */}
           <div className="mb-20">
             <h2 className="font-display font-black text-4xl md:text-5xl uppercase mb-8 text-white">
-              Voor Welke Gelegenheden?
+              Voor welke gelegenheden?
             </h2>
             <div className="grid md:grid-cols-2 gap-6">
               <div className="p-6 rounded-2xl bg-secondary-black border-2 border-gray-800">
                 <Sparkles className="w-8 h-8 text-vivid-yellow mb-4" />
-                <h3 className="font-display font-bold text-xl mb-2 text-white">Feesten & Vieringen</h3>
+                <h3 className="font-display font-bold text-xl mb-2 text-white">Feesten en vieringen</h3>
                 <p className="text-gray-300">Verjaardagen, jubilea, bruiloften, babyborrerels, afscheidfeesten, pensioenvieringen</p>
               </div>
 
               <div className="p-6 rounded-2xl bg-secondary-black border-2 border-gray-800">
                 <Heart className="w-8 h-8 text-hot-pink mb-4" />
-                <h3 className="font-display font-bold text-xl mb-2 text-white">Emotionele Momenten</h3>
+                <h3 className="font-display font-bold text-xl mb-2 text-white">Emotionele momenten</h3>
                 <p className="text-gray-300">Herinneringsliedjes, rouwverwerking, dankbetuigingen, excuses, liefdesverklaringen</p>
               </div>
 
               <div className="p-6 rounded-2xl bg-secondary-black border-2 border-gray-800">
                 <Music2 className="w-8 h-8 text-electric-blue mb-4" />
-                <h3 className="font-display font-bold text-xl mb-2 text-white">Zomaar Omdat Het Kan</h3>
+                <h3 className="font-display font-bold text-xl mb-2 text-white">Zomaar omdat het kan</h3>
                 <p className="text-gray-300">Een lied voor je beste vriend, je huisdier, je favoriete voetbalclub, of gewoon een rare inside joke</p>
               </div>
 
               <div className="p-6 rounded-2xl bg-secondary-black border-2 border-gray-800">
                 <Sparkles className="w-8 h-8 text-cyan-bright mb-4" />
-                <h3 className="font-display font-bold text-xl mb-2 text-white">Bedrijven & Events</h3>
+                <h3 className="font-display font-bold text-xl mb-2 text-white">Bedrijven en events</h3>
                 <p className="text-gray-300">Bedrijfsjubilea, teambuilding, productlanceringen, merkcampagnes, podcast intros</p>
               </div>
             </div>
@@ -144,7 +144,7 @@ export default function LiedLatenMakenPage() {
           {/* Related Services */}
           <div className="mb-20">
             <h2 className="font-display font-black text-4xl md:text-5xl uppercase mb-8 text-white">
-              Of Kies Een Specifieke Gelegenheid
+              Of kies een specifieke gelegenheid
             </h2>
             <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-4">
               {relatedServices.map((service) => (
