@@ -19,7 +19,7 @@ export async function POST(request: NextRequest) {
     // Send email using Resend
     const data = await resend.emails.send({
       from: 'Rai Clark Website <onboarding@resend.dev>',
-      to: ['rai@raiclark.nl'],
+      to: ['declerckroy@gmail.com'], // Tijdelijk voor testing - verander later naar rai@raiclark.nl na domein verificatie
       replyTo: email,
       subject: `Nieuw contactformulier: ${projectType}`,
       html: `
